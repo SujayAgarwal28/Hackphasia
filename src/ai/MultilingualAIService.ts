@@ -1,7 +1,7 @@
 // Advanced Multilingual AI Service for Real-time Translation and Cultural Context
-// Using Google Translate API and custom cultural adaptation algorithms
+// Using browser-based translation and cultural adaptation algorithms
 
-interface LanguageSupport {
+export interface LanguageSupport {
   code: string;
   name: string;
   nativeName: string;
@@ -17,7 +17,7 @@ interface LanguageSupport {
   emergencyPhrases: Record<string, string>;
 }
 
-interface TranslationRequest {
+export interface TranslationRequest {
   text: string;
   fromLanguage: string;
   toLanguage: string;
@@ -25,13 +25,13 @@ interface TranslationRequest {
   culturalAdaptation: boolean;
 }
 
-interface TranslationResponse {
+export interface TranslationResponse {
   originalText: string;
   translatedText: string;
   confidence: number;
   culturalNotes?: string[];
   alternativeTranslations?: string[];
-  audioUrl?: string; // For text-to-speech
+  audioUrl?: string;
   culturalContext?: {
     communicationTips: string[];
     sensitiveTopics: string[];
@@ -39,7 +39,7 @@ interface TranslationResponse {
   };
 }
 
-interface ConversationalAI {
+export interface ConversationalAI {
   sessionId: string;
   userLanguage: string;
   aiLanguage: string;
@@ -263,24 +263,91 @@ class MultilingualAIService {
     // Mock contextual translation based on cultural understanding
     if (!targetLanguage) return text;
 
-    // Check for emergency phrases
+    const lowerText = text.toLowerCase().trim();
+
+    // Check for emergency phrases (exact matches first)
     const emergencyMatch = Object.entries(targetLanguage.emergencyPhrases).find(
-      ([english, _]) => text.toLowerCase().includes(english.toLowerCase())
+      ([english, _]) => lowerText === english.toLowerCase()
     );
     if (emergencyMatch) {
       return emergencyMatch[1];
     }
 
-    // Check for common health terms
-    const healthMatch = Object.entries(targetLanguage.commonHealthTerms).find(
-      ([english, _]) => text.toLowerCase().includes(english.toLowerCase())
+    // Check for partial emergency phrase matches
+    const partialEmergencyMatch = Object.entries(targetLanguage.emergencyPhrases).find(
+      ([english, _]) => lowerText.includes(english.toLowerCase())
     );
-    if (healthMatch) {
-      return text.replace(new RegExp(healthMatch[0], 'gi'), healthMatch[1]);
+    if (partialEmergencyMatch) {
+      return text.replace(new RegExp(partialEmergencyMatch[0], 'gi'), partialEmergencyMatch[1]);
     }
 
-    // For demo purposes, return culturally adapted mock translation
-    return `[${targetLanguage.nativeName} translation] ${text}`;
+    // Check for common health terms and replace them
+    let translatedText = text;
+    Object.entries(targetLanguage.commonHealthTerms).forEach(([english, translated]) => {
+      const regex = new RegExp(`\\b${english}\\b`, 'gi');
+      translatedText = translatedText.replace(regex, translated);
+    });
+
+    // If we made any replacements, return the partially translated text
+    if (translatedText !== text) {
+      return translatedText;
+    }
+
+    // Common medical phrases translations by language
+    const commonPhrases: {[key: string]: {[key: string]: string}} = {
+      'ar': {
+        "i don't understand": "لا أفهم",
+        "i need help": "أحتاج مساعدة", 
+        "i have pain here": "أشعر بألم هنا",
+        "emergency": "طوارئ",
+        "i need a doctor": "أحتاج طبيب",
+        "where is the hospital": "أين المستشفى",
+        "please help me": "من فضلك ساعدني",
+        "i have fever": "أعاني من حمى"
+      },
+      'fa': {
+        "i don't understand": "نمی‌فهمم",
+        "i need help": "کمک می‌خواهم",
+        "i have pain here": "اینجا درد دارم", 
+        "emergency": "اورژانس",
+        "i need a doctor": "دکتر می‌خواهم",
+        "where is the hospital": "بیمارستان کجاست",
+        "please help me": "لطفاً کمکم کنید",
+        "i have fever": "تب دارم"
+      },
+      'so': {
+        "i don't understand": "Ma fahmin",
+        "i need help": "Waxaan u baahanahay caawimo",
+        "i have pain here": "Xanuun halkan",
+        "emergency": "Degdeg", 
+        "i need a doctor": "Waxaan u baahanahay dhakhtar",
+        "where is the hospital": "Xaggee ku taal isbitaalka",
+        "please help me": "Fadlan i caawi",
+        "i have fever": "Qandho ayaan qabaa"
+      },
+      'uk': {
+        "i don't understand": "Я не розумію",
+        "i need help": "Мені потрібна допомога",
+        "i have pain here": "У мене тут болить",
+        "emergency": "Невідкладна допомога",
+        "i need a doctor": "Мені потрібен лікар", 
+        "where is the hospital": "Де лікарня",
+        "please help me": "Будь ласка, допоможіть мені",
+        "i have fever": "У мене температура"
+      }
+    };
+
+    // Check for exact phrase match
+    const languagePhrases = commonPhrases[targetLanguage.code];
+    if (languagePhrases) {
+      const exactMatch = languagePhrases[lowerText];
+      if (exactMatch) {
+        return exactMatch;
+      }
+    }
+
+    // Fallback: return original text (no translation available)
+    return text;
   }
 
   async createConversationalSession(userLanguage: string): Promise<ConversationalAI> {
@@ -433,4 +500,3 @@ class MultilingualAIService {
 }
 
 export const multilingualAI = new MultilingualAIService();
-export type { LanguageSupport, TranslationRequest, TranslationResponse, ConversationalAI };
