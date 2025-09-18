@@ -1,4 +1,7 @@
 import { useState } from 'react';
+// Gemini API endpoint and key (replace with your backend endpoint if needed)
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
 import BodyMappingCanvas from '../voice/BodyMappingCanvas';
 
 const BodyMappingPage = () => {
@@ -34,43 +37,46 @@ const BodyMappingPage = () => {
     );
   };
 
-  const generateReport = () => {
-    const report = {
+  const [loadingReport, setLoadingReport] = useState(false);
+
+  const generateReport = async () => {
+    const reportData = {
       painAreas: selectedZones,
       painLevel,
       duration: painDuration,
       symptoms: additionalSymptoms,
       notes,
       timestamp: new Date().toISOString(),
-      recommendations: generateRecommendations()
     };
 
-    // For now, just show in console and alert
-    console.log('Body Mapping Report:', report);
-    
-    const reportText = `
-BODY MAPPING REPORT
-Generated: ${new Date().toLocaleString()}
+    setLoadingReport(true);
+    try {
+      const response = await fetch("http://localhost:3001/api/report", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ reportData }),
+      });
 
-PAIN AREAS: ${selectedZones.join(', ') || 'None selected'}
-PAIN LEVEL: ${painLevel}/10
-DURATION: ${painDuration}
-SYMPTOMS: ${additionalSymptoms.join(', ') || 'None'}
+      const data = await response.json();
+      const geminiText = data?.reply || 'No report generated.';
 
-NOTES: ${notes}
-
-RECOMMENDATIONS:
-${report.recommendations.join('\n')}
-    `;
-
-    // Create downloadable report
-    const blob = new Blob([reportText], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `pain-mapping-${Date.now()}.txt`;
-    a.click();
-    URL.revokeObjectURL(url);
+      // Download the report as a text file
+      const reportText = `BODY MAPPING REPORT\nGenerated: ${new Date().toLocaleString()}\n\nPAIN AREAS: ${selectedZones.join(', ') || 'None selected'}\nPAIN LEVEL: ${painLevel}/10\nDURATION: ${painDuration}\nSYMPTOMS: ${additionalSymptoms.join(', ') || 'None'}\n\nNOTES: ${notes}\n\nAI FIRST AID REPORT:\n${geminiText}`;
+      const blob = new Blob([reportText], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `pain-mapping-${Date.now()}.txt`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error(err);
+      // Optionally show an error alert
+      alert('Error generating report. Please try again.');
+    }
+    setLoadingReport(false);
   };
 
   const generateRecommendations = (): string[] => {
@@ -224,35 +230,20 @@ ${report.recommendations.join('\n')}
               />
             </div>
 
-            {/* Generate Report */}
+            {/* Generate Report & AI First Aid */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                📊 Pain Assessment Summary
+                Pain Assessment Summary
               </h3>
-              
-              {selectedZones.length > 0 && (
-                <div className="mb-4">
-                  <h4 className="font-medium text-gray-900 dark:text-white mb-2">Recommendations:</h4>
-                  <ul className="space-y-1">
-                    {generateRecommendations().map((rec, index) => (
-                      <li key={index} className="text-sm text-gray-600 dark:text-gray-300">
-                        {rec}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
               <button
                 onClick={generateReport}
-                disabled={selectedZones.length === 0}
-                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+                disabled={selectedZones.length === 0 || loadingReport}
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-semibold py-3 px-4 rounded-lg transition-colors mb-4"
               >
-                📄 Generate & Download Report
+                {loadingReport ? 'Generating Report...' : 'Generate First Aid & Download'}
               </button>
-              
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
-                This report can be shared with healthcare providers
+                The report will be downloaded and can be shared with healthcare providers
               </p>
             </div>
           </div>
