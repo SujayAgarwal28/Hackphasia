@@ -6,11 +6,11 @@ const Navigation: React.FC = () => {
 
   const navigationItems = [
     { path: '/', label: 'Home', icon: '🏠' },
-    { path: '/triage', label: 'Health Check', icon: '🩺' },
-    { path: '/map', label: 'Find Clinics', icon: '🗺️' },
-    { path: '/first-aid', label: 'First Aid', icon: '🚑' },
+    { path: '/ai-triage', label: 'AI Triage', icon: '🤖' },
+    { path: '/visual-health', label: 'Visual AI', icon: '👁️' },
+    { path: '/multilingual', label: 'Translate', icon: '🌍' },
+    { path: '/body-mapping', label: 'Body Map', icon: '🗺️' },
     { path: '/mental-health', label: 'Mental Health', icon: '💙' },
-    { path: '/about', label: 'About', icon: 'ℹ️' },
   ];
 
   return (
