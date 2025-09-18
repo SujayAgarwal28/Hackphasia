@@ -35,23 +35,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
             {/* User Actions */}
             <div className="flex items-center space-x-3">
-              {/* Emergency Button */}
-              <button className="btn-danger btn-sm hidden sm:inline-flex">
-                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                </svg>
-                Emergency
-              </button>
-              
-              {/* Language Selector */}
-              <select className="form-select text-sm py-1.5 px-3 min-w-0 w-auto">
-                <option value="en">EN</option>
-                <option value="ar">AR</option>
-                <option value="fa">FA</option>
-                <option value="so">SO</option>
-                <option value="uk">UK</option>
-              </select>
-
               {/* Mobile Menu Button */}
               <button className="lg:hidden p-2 rounded-lg hover:bg-neutral-100 transition-colors">
                 <svg className="w-6 h-6 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,9 +51,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container-custom py-3">
           <div className="grid grid-cols-3 gap-2">
             <MobileNavItem href="/ai-triage" label="AI Assessment" />
-            <MobileNavItem href="/visual-health" label="Visual Scan" />
             <MobileNavItem href="/multilingual" label="Translate" />
-            <MobileNavItem href="/body-mapping" label="Body Map" />
+            {/*<MobileNavItem href="/body-mapping" label="Body Map" />*/}
             <MobileNavItem href="/mental-health" label="Mental Health" />
             <MobileNavItem href="/" label="Dashboard" />
           </div>

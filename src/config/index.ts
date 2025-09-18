@@ -1,5 +1,15 @@
 import { AppConfig, Language } from '../types';
 
+const firebaseConfig = {
+  apiKey: "AIzaSyBCriQSed2c8FCwcEBKMewZba8Xdz1QqM4",
+  authDomain: "hackuccino-794e2.firebaseapp.com",
+  projectId: "hackuccino-794e2",
+  storageBucket: "hackuccino-794e2.appspot.com",
+  messagingSenderId: "872787673330",
+  appId: "1:872787673330:web:f30c86fc61ea02cfa22352",
+  measurementId: "G-61KH8NKHRH"
+};
+
 // Environment variable validation and parsing
 const getEnvVar = (key: string, defaultValue?: string): string => {
   const value = import.meta.env[key] || defaultValue;
@@ -59,14 +69,7 @@ export const supportedLanguages: Language[] = [
 
 // Main application configuration
 export const appConfig: AppConfig = {
-  firebase: {
-    apiKey: getEnvVar('VITE_FIREBASE_API_KEY', ''),
-    authDomain: getEnvVar('VITE_FIREBASE_AUTH_DOMAIN', ''),
-    projectId: getEnvVar('VITE_FIREBASE_PROJECT_ID', ''),
-    storageBucket: getEnvVar('VITE_FIREBASE_STORAGE_BUCKET', ''),
-    messagingSenderId: getEnvVar('VITE_FIREBASE_MESSAGING_SENDER_ID', ''),
-    appId: getEnvVar('VITE_FIREBASE_APP_ID', ''),
-  },
+  firebase: firebaseConfig,
   supportedLanguages,
   defaultLanguage: 'en',
   maps: {
