@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { VoiceInput, UserTriageSummary } from '../types';
 import VoiceInputComponent from '../voice/VoiceInput';
 import { TriageEngine } from '../voice/TriageEngine';
+import BodyMapper, { PainAssessment } from '../voice/BodyMapper';
+import { HealthReportGenerator, ComprehensiveReport } from '../voice/HealthReportGenerator';
 import { generateId, formatDate } from '../utils';
 
 const TriagePage = () => {
@@ -10,6 +12,9 @@ const TriagePage = () => {
   const [triageResult, setTriageResult] = useState<UserTriageSummary | null>(null);
   const [detectedSymptoms, setDetectedSymptoms] = useState<string[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [painAssessments, setPainAssessments] = useState<PainAssessment[]>([]);
+  const [comprehensiveReport, setComprehensiveReport] = useState<ComprehensiveReport | null>(null);
+  const [showBodyMapper, setShowBodyMapper] = useState(false);
 
   const handleVoiceInput = (voiceInput: VoiceInput) => {
     setCurrentTranscript(voiceInput.transcript);
@@ -42,11 +47,73 @@ const TriagePage = () => {
     setIsProcessing(false);
   };
 
+  const handlePainAssessment = (assessment: PainAssessment) => {
+    const updatedAssessments = [...painAssessments, assessment];
+    setPainAssessments(updatedAssessments);
+    
+    // Generate comprehensive report
+    const report = HealthReportGenerator.generateComprehensiveReport(updatedAssessments);
+    setComprehensiveReport(report);
+  };
+
+  const removePainAssessment = (index: number) => {
+    const updatedAssessments = painAssessments.filter((_, i) => i !== index);
+    setPainAssessments(updatedAssessments);
+    
+    if (updatedAssessments.length > 0) {
+      const report = HealthReportGenerator.generateComprehensiveReport(updatedAssessments);
+      setComprehensiveReport(report);
+    } else {
+      setComprehensiveReport(null);
+    }
+  };
+
+  const downloadComprehensiveReport = () => {
+    if (!comprehensiveReport) return;
+    
+    const reportText = HealthReportGenerator.formatReportForPrint(comprehensiveReport);
+    const blob = new Blob([reportText], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `comprehensive-health-report-${comprehensiveReport.id}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const printComprehensiveReport = () => {
+    if (!comprehensiveReport) return;
+    
+    const reportText = HealthReportGenerator.formatReportForPrint(comprehensiveReport);
+    const printWindow = window.open('', '_blank');
+    if (printWindow) {
+      printWindow.document.write(`
+        <html>
+          <head>
+            <title>Health Assessment Report</title>
+            <style>
+              body { font-family: monospace; white-space: pre-wrap; margin: 20px; }
+              @media print { body { margin: 0; } }
+            </style>
+          </head>
+          <body>${reportText}</body>
+        </html>
+      `);
+      printWindow.document.close();
+      printWindow.print();
+    }
+  };
+
   const resetAssessment = () => {
     setCurrentTranscript('');
     setTriageResult(null);
     setDetectedSymptoms([]);
     setIsProcessing(false);
+    setPainAssessments([]);
+    setComprehensiveReport(null);
+    setShowBodyMapper(false);
   };
 
   const getUrgencyColor = (urgency: string) => {
@@ -106,7 +173,7 @@ DISCLAIMER: This assessment is for informational purposes only and should not re
         </p>
       </div>
 
-      {!triageResult ? (
+      {!triageResult && !showBodyMapper ? (
         <div className="space-y-6">
           <VoiceInputComponent
             onTranscript={handleVoiceInput}
@@ -141,6 +208,14 @@ DISCLAIMER: This assessment is for informational purposes only and should not re
                   </span>
                 ))}
               </div>
+              <div className="mt-4">
+                <button
+                  onClick={() => setShowBodyMapper(true)}
+                  className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+                >
+                  📍 Map Your Pain on Body Diagram
+                </button>
+              </div>
             </div>
           )}
 
@@ -162,6 +237,151 @@ DISCLAIMER: This assessment is for informational purposes only and should not re
               <li>• Make sure microphone permissions are enabled</li>
             </ul>
           </div>
+        </div>
+      ) : showBodyMapper ? (
+        <div className="space-y-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+              🎯 Body Pain Mapping
+            </h2>
+            <button
+              onClick={() => setShowBodyMapper(false)}
+              className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg"
+            >
+              ← Back to Voice Assessment
+            </button>
+          </div>
+
+          <BodyMapper
+            onRegionSelect={handlePainAssessment}
+            selectedRegions={painAssessments}
+          />
+
+          {painAssessments.length > 0 && comprehensiveReport && (
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  🏥 Comprehensive Health Report
+                </h3>
+                <div className="flex space-x-2">
+                  <button
+                    onClick={printComprehensiveReport}
+                    className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded text-sm"
+                  >
+                    🖨️ Print
+                  </button>
+                  <button
+                    onClick={downloadComprehensiveReport}
+                    className="px-3 py-1 bg-green-600 hover:bg-green-700 text-white rounded text-sm"
+                  >
+                    💾 Download
+                  </button>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    Overall Assessment
+                  </h4>
+                  <p className="text-2xl font-bold text-gray-700 dark:text-gray-300">
+                    Pain Score: {comprehensiveReport.overallPainScore}/10
+                  </p>
+                  <p className={`text-lg font-semibold ${
+                    comprehensiveReport.urgencyLevel === 'emergency' ? 'text-red-600' :
+                    comprehensiveReport.urgencyLevel === 'high' ? 'text-orange-600' :
+                    comprehensiveReport.urgencyLevel === 'medium' ? 'text-yellow-600' :
+                    'text-green-600'
+                  }`}>
+                    Priority: {comprehensiveReport.urgencyLevel.toUpperCase()}
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    Affected Regions ({painAssessments.length})
+                  </h4>
+                  <div className="space-y-1">
+                    {painAssessments.slice(0, 4).map((assessment, index) => (
+                      <div key={index} className="text-sm text-gray-600 dark:text-gray-400">
+                        • {assessment.region.name}: Level {assessment.painLevel}/10
+                      </div>
+                    ))}
+                    {painAssessments.length > 4 && (
+                      <div className="text-sm text-gray-500">
+                        ... and {painAssessments.length - 4} more regions
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {comprehensiveReport.redFlags.length > 0 && (
+                <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                  <h4 className="font-bold text-red-800 dark:text-red-200 mb-2">
+                    🚨 RED FLAGS - URGENT ATTENTION NEEDED
+                  </h4>
+                  <ul className="text-red-700 dark:text-red-300 text-sm space-y-1">
+                    {comprehensiveReport.redFlags.map((flag, index) => (
+                      <li key={index}>• {flag}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <div className="mb-6">
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
+                  💊 Medical Recommendations
+                </h4>
+                <ul className="space-y-2">
+                  {comprehensiveReport.recommendations.medicalAdvice.slice(0, 3).map((advice, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-3">
+                        {index + 1}
+                      </span>
+                      <span className="text-gray-700 dark:text-gray-300">{advice}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
+                  🏃‍♂️ Exercise Recommendations
+                </h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {comprehensiveReport.recommendations.exercises.slice(0, 4).map((exercise, index) => (
+                    <div key={index} className="bg-gray-50 dark:bg-gray-700 p-3 rounded">
+                      <h5 className="font-medium text-gray-900 dark:text-white">{exercise.name}</h5>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        {exercise.description}
+                      </p>
+                      <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
+                        {exercise.frequency} • {exercise.duration}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-4">
+                <button
+                  onClick={() => window.open('/map', '_blank')}
+                  className="flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors"
+                >
+                  <span className="mr-2">🏥</span>
+                  Find Nearby Clinics
+                </button>
+                <button
+                  onClick={resetAssessment}
+                  className="flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors"
+                >
+                  <span className="mr-2">🔄</span>
+                  New Assessment
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         <div className="space-y-6">
