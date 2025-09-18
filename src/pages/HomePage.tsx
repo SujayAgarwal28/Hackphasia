@@ -49,9 +49,9 @@ const HomePage: React.FC = () => {
         
         <FeatureCard
           title="Draw Your Pain"
-          description="Touch body zones to map symptoms"
+          description="Interactive body mapping for pain visualization"
           icon="👤"
-          link="/triage?mode=draw"
+          link="/body-mapping"
           color="bg-orange-500"
         />
         

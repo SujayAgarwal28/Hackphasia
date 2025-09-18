@@ -28,7 +28,7 @@ export interface FirstAidGuide {
   imageUrl?: string;
   audioUrl?: string;
   category: 'bleeding' | 'breathing' | 'burns' | 'shock' | 'fractures' | 'other';
-  urgency: 'low' | 'medium' | 'high';
+  urgency: 'low' | 'medium' | 'high' | 'emergency';
   language: string;
 }
 

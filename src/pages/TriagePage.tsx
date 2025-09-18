@@ -1,17 +1,296 @@
-import React from 'react';
+import { useState } from 'react';
+import { VoiceInput, UserTriageSummary } from '../types';
+import VoiceInputComponent from '../voice/VoiceInput';
+import { TriageEngine } from '../voice/TriageEngine';
+import { generateId, formatDate } from '../utils';
 
-const TriagePage: React.FC = () => {
+const TriagePage = () => {
+  const [isListening, setIsListening] = useState(false);
+  const [currentTranscript, setCurrentTranscript] = useState('');
+  const [triageResult, setTriageResult] = useState<UserTriageSummary | null>(null);
+  const [detectedSymptoms, setDetectedSymptoms] = useState<string[]>([]);
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  const handleVoiceInput = (voiceInput: VoiceInput) => {
+    setCurrentTranscript(voiceInput.transcript);
+    setIsProcessing(true);
+
+    // Detect symptoms from the transcript
+    const symptoms = TriageEngine.detectSymptoms(voiceInput.transcript);
+    setDetectedSymptoms(symptoms);
+
+    if (symptoms.length > 0) {
+      // Analyze symptoms and get triage result
+      const analysis = TriageEngine.analyzeSymptoms(symptoms);
+      
+      // Create triage summary
+      const summary: UserTriageSummary = {
+        id: generateId(),
+        userId: 'anonymous',
+        symptoms,
+        bodyZones: [], // Will be enhanced with body mapping feature
+        urgency: analysis.urgency,
+        advice: analysis.advice,
+        recommendedActions: analysis.recommendedActions,
+        createdAt: new Date().toISOString(),
+        language: 'en'
+      };
+
+      setTriageResult(summary);
+    }
+
+    setIsProcessing(false);
+  };
+
+  const resetAssessment = () => {
+    setCurrentTranscript('');
+    setTriageResult(null);
+    setDetectedSymptoms([]);
+    setIsProcessing(false);
+  };
+
+  const getUrgencyColor = (urgency: string) => {
+    switch (urgency) {
+      case 'emergency': return 'bg-red-500 text-white';
+      case 'high': return 'bg-orange-500 text-white';
+      case 'medium': return 'bg-yellow-500 text-black';
+      case 'low': return 'bg-green-500 text-white';
+      default: return 'bg-gray-500 text-white';
+    }
+  };
+
+  const printSummary = () => {
+    window.print();
+  };
+
+  const downloadSummary = () => {
+    if (!triageResult) return;
+    
+    const summaryText = `
+HEALTH ASSESSMENT SUMMARY
+Generated: ${formatDate(triageResult.createdAt)}
+
+SYMPTOMS DETECTED:
+${triageResult.symptoms.map(s => `• ${s}`).join('\n')}
+
+URGENCY LEVEL: ${triageResult.urgency.toUpperCase()}
+
+ADVICE:
+${triageResult.advice}
+
+RECOMMENDED ACTIONS:
+${triageResult.recommendedActions.map(a => `• ${a}`).join('\n')}
+
+DISCLAIMER: This assessment is for informational purposes only and should not replace professional medical advice.
+    `;
+
+    const blob = new Blob([summaryText], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `health-assessment-${triageResult.id}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-        Health Assessment
-      </h1>
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          🩺 Health Assessment
+        </h1>
         <p className="text-gray-600 dark:text-gray-300">
-          Voice-enabled health assessment and symptom checker module will be implemented here.
-          This will include the "Draw Your Pain" feature and rule-based triage engine.
+          Voice-enabled symptom checker with multilingual support. Describe your symptoms and get immediate triage guidance.
         </p>
       </div>
+
+      {!triageResult ? (
+        <div className="space-y-6">
+          <VoiceInputComponent
+            onTranscript={handleVoiceInput}
+            isListening={isListening}
+            onListeningChange={setIsListening}
+            language="en-US"
+          />
+
+          {currentTranscript && (
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+              <h3 className="font-semibold text-blue-900 dark:text-blue-200 mb-2">
+                Processing your input...
+              </h3>
+              <p className="text-blue-800 dark:text-blue-300">
+                "{currentTranscript}"
+              </p>
+            </div>
+          )}
+
+          {detectedSymptoms.length > 0 && (
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+                Detected Symptoms:
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {detectedSymptoms.map((symptom, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                  >
+                    {symptom}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {isProcessing && (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+              <p className="text-gray-600 dark:text-gray-300">Analyzing your symptoms...</p>
+            </div>
+          )}
+
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+            <h3 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+              💡 Tips for better voice recognition:
+            </h3>
+            <ul className="text-yellow-700 dark:text-yellow-300 text-sm space-y-1">
+              <li>• Speak clearly and at a normal pace</li>
+              <li>• Describe symptoms in simple terms</li>
+              <li>• Examples: "I have a headache and fever" or "My chest hurts"</li>
+              <li>• Make sure microphone permissions are enabled</li>
+            </ul>
+          </div>
+        </div>
+      ) : (
+        <div className="space-y-6">
+          {/* Triage Result Display */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Assessment Results
+              </h2>
+              <span className={`px-4 py-2 rounded-full text-sm font-bold ${getUrgencyColor(triageResult.urgency)}`}>
+                {triageResult.urgency.toUpperCase()} PRIORITY
+              </span>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+                  Detected Symptoms:
+                </h3>
+                <div className="space-y-2">
+                  {triageResult.symptoms.map((symptom, index) => (
+                    <div key={index} className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                      <span className="text-gray-700 dark:text-gray-300 capitalize">
+                        {symptom}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+                  Assessment Details:
+                </h3>
+                <div className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                  <p><strong>Generated:</strong> {formatDate(triageResult.createdAt)}</p>
+                  <p><strong>Language:</strong> English</p>
+                  <p><strong>Assessment ID:</strong> {triageResult.id}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+                Medical Advice:
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                {triageResult.advice}
+              </p>
+            </div>
+
+            <div className="mb-6">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
+                Recommended Actions:
+              </h3>
+              <ol className="space-y-2">
+                {triageResult.recommendedActions.map((action, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-3">
+                      {index + 1}
+                    </span>
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {action}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            {triageResult.urgency === 'emergency' && (
+              <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                <div className="flex items-center">
+                  <span className="text-2xl mr-3">🚨</span>
+                  <div>
+                    <h4 className="font-bold text-red-800 dark:text-red-200">EMERGENCY SITUATION</h4>
+                    <p className="text-red-700 dark:text-red-300">
+                      Call your local emergency number immediately. Do not delay seeking professional medical help.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={printSummary}
+                className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+              >
+                <span className="mr-2">🖨️</span>
+                Print Summary
+              </button>
+              <button
+                onClick={downloadSummary}
+                className="flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+              >
+                <span className="mr-2">💾</span>
+                Download
+              </button>
+              <button
+                onClick={() => window.open('/map', '_blank')}
+                className="flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors"
+              >
+                <span className="mr-2">🏥</span>
+                Find Clinics
+              </button>
+              <button
+                onClick={resetAssessment}
+                className="flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors"
+              >
+                <span className="mr-2">🔄</span>
+                New Assessment
+              </button>
+            </div>
+          </div>
+
+          {/* Disclaimer */}
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+            <h3 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+              ⚠️ Important Medical Disclaimer
+            </h3>
+            <p className="text-yellow-700 dark:text-yellow-300 text-sm">
+              This assessment is for informational purposes only and should not replace professional medical advice, 
+              diagnosis, or treatment. Always seek the advice of qualified healthcare providers with any questions 
+              you may have regarding a medical condition.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
