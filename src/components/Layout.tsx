@@ -35,16 +35,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
             {/* User Actions */}
             <div className="flex items-center space-x-3">
-              
-              {/* Language Selector */}
-              <select className="form-select text-sm py-1.5 px-3 min-w-0 w-auto">
-                <option value="en">EN</option>
-                <option value="ar">AR</option>
-                <option value="fa">FA</option>
-                <option value="so">SO</option>
-                <option value="uk">UK</option>
-              </select>
-
               {/* Mobile Menu Button */}
               <button className="lg:hidden p-2 rounded-lg hover:bg-neutral-100 transition-colors">
                 <svg className="w-6 h-6 text-neutral-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
