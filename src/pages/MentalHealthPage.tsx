@@ -1,8 +1,93 @@
 import { useState } from 'react';
+import React from 'react';
 import MoodSelector from '../mental-health/MoodSelector';
 import BreathingExercises from '../mental-health/BreathingExercises';
 import AudioStories from '../mental-health/AudioStories';
 import { MoodSelection } from '../types';
+
+const Chatbot = () => {
+  const [expanded, setExpanded] = useState(false);
+  const [messages, setMessages] = useState([
+    { sender: 'bot', text: 'Hi! I am your mental health assistant. How can I help you today?' }
+  ]);
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const sendMessage = async () => {
+    if (!input.trim()) return;
+    setMessages([...messages, { sender: 'user', text: input }]);
+    setLoading(true);
+    try {
+      const response = await fetch("http://localhost:3001/api/chat", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          messages: [
+            ...messages.map(m => ({ role: m.sender === 'bot' ? 'assistant' : 'user', content: m.text })),
+            { role: 'user', content: input }
+          ]
+        })
+      });
+      
+      const data = await response.json();
+      console.log(data);
+
+      setMessages(msgs => [...msgs, { sender: 'bot', text: data.reply }]);
+    } catch (err) {
+      setMessages(msgs => [...msgs, { sender: 'bot', text: "Sorry, there was an error connecting to the advice service." }]);
+      console.error("Error:", err);
+    }
+    setInput("");
+    setLoading(false);
+  };
+
+  return (
+    <div className="mb-8">
+      <button
+        className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 mb-2"
+        onClick={() => setExpanded(e => !e)}
+      >
+        {expanded ? 'Hide Chatbot' : 'Show Mental Health Chatbot'}
+      </button>
+      {expanded && (
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mt-2">
+          <h2 className="text-xl font-semibold mb-4">💬 Mental Health Chatbot</h2>
+          <div className="h-64 overflow-y-auto flex flex-col gap-2 mb-4 border rounded p-4 bg-gray-50 dark:bg-gray-900">
+            {messages.map((msg, idx) => (
+              <div key={idx} className={msg.sender === "bot" ? "text-left" : "text-right"}>
+                <span className={msg.sender === "bot" ? "bg-blue-100 dark:bg-blue-900 text-blue-900 dark:text-blue-100 px-3 py-2 rounded-lg inline-block" : "bg-green-100 dark:bg-green-900 text-green-900 dark:text-green-100 px-3 py-2 rounded-lg inline-block"}>
+                  {msg.text}
+                </span>
+              </div>
+            ))}
+            {loading && <div className="text-blue-500">Bot is typing...</div>}
+          </div>
+          <div className="flex gap-2">
+            <input
+              type="text"
+              className="flex-1 border rounded px-3 py-2 dark:bg-gray-700 dark:text-white"
+              placeholder="Type your message..."
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') sendMessage(); }}
+              disabled={loading}
+            />
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+              onClick={sendMessage}
+              disabled={loading}
+            >
+              Send
+            </button>
+          </div>
+          <div className="text-xs text-gray-400 mt-2">Powered by OpenAI GPT-3.5-turbo</div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const MentalHealthPage = () => {
   const [currentMood, setCurrentMood] = useState<MoodSelection | undefined>();
@@ -73,6 +158,9 @@ const MentalHealthPage = () => {
             and healing stories designed specifically for those who have experienced trauma.
           </p>
         </div>
+
+        {/* Chatbot Section */}
+        <Chatbot />
 
         {/* Wellness Summary */}
         {(completedActivities.moods.length > 0 || getTotalWellnessTime() > 0) && (
