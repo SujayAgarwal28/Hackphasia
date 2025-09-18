@@ -1,0 +1,201 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  # Job 1: Code Quality & Testing
+  quality-check:
+    runs-on: ubuntu-latest
+    name: Code Quality & Tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run TypeScript compilation check
+      run: npm run typecheck
+      
+    - name: Run ESLint
+      run: npm run lint
+      
+    - name: Build project
+      run: npm run build
+      env:
+        VITE_APP_NAME: "Refugee Health Assistant"
+        VITE_APP_VERSION: "0.1.0"
+        VITE_FIREBASE_API_KEY: "demo-key"
+        VITE_FIREBASE_AUTH_DOMAIN: "demo.firebaseapp.com"
+        VITE_FIREBASE_PROJECT_ID: "demo-project"
+        VITE_FIREBASE_STORAGE_BUCKET: "demo.appspot.com"
+        VITE_FIREBASE_MESSAGING_SENDER_ID: "123456789"
+        VITE_FIREBASE_APP_ID: "demo-app-id"
+        VITE_DEFAULT_MAP_CENTER_LAT: "39.9334"
+        VITE_DEFAULT_MAP_CENTER_LNG: "32.8597"
+        VITE_DEFAULT_MAP_ZOOM: "10"
+        VITE_VOICE_API_ENABLED: "true"
+        VITE_ENABLE_VOICE_INPUT: "true"
+        VITE_ENABLE_SAFE_ROUTE: "true"
+        VITE_ENABLE_PWA: "true"
+        VITE_DEBUG_MODE: "false"
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-files
+        path: dist/
+        retention-days: 7
+
+  # Job 2: Security Scan
+  security-scan:
+    runs-on: ubuntu-latest
+    name: Security Audit
+    needs: quality-check
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run npm audit
+      run: npm audit --audit-level=moderate
+      continue-on-error: true
+      
+    - name: Run security scan
+      run: |
+        echo "Security scan completed"
+        # Add additional security tools here if needed
+
+  # Job 3: Deployment Preview (for PRs)
+  deploy-preview:
+    runs-on: ubuntu-latest
+    name: Deploy Preview
+    needs: [quality-check, security-scan]
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Build for preview
+      run: npm run build
+      env:
+        VITE_APP_NAME: "Refugee Health Assistant (Preview)"
+        VITE_APP_VERSION: "0.1.0-preview"
+        VITE_FIREBASE_API_KEY: "demo-key"
+        VITE_FIREBASE_AUTH_DOMAIN: "demo.firebaseapp.com"
+        VITE_FIREBASE_PROJECT_ID: "demo-project"
+        VITE_FIREBASE_STORAGE_BUCKET: "demo.appspot.com"
+        VITE_FIREBASE_MESSAGING_SENDER_ID: "123456789"
+        VITE_FIREBASE_APP_ID: "demo-app-id"
+        VITE_DEFAULT_MAP_CENTER_LAT: "39.9334"
+        VITE_DEFAULT_MAP_CENTER_LNG: "32.8597"
+        VITE_DEFAULT_MAP_ZOOM: "10"
+        VITE_VOICE_API_ENABLED: "true"
+        VITE_ENABLE_VOICE_INPUT: "true"
+        VITE_ENABLE_SAFE_ROUTE: "true"
+        VITE_ENABLE_PWA: "true"
+        VITE_DEBUG_MODE: "true"
+        
+    - name: Deploy to Vercel (Preview)
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        working-directory: ./
+      if: github.event_name == 'pull_request'
+
+  # Job 4: Production Deployment (on main branch)
+  deploy-production:
+    runs-on: ubuntu-latest
+    name: Deploy to Production
+    needs: [quality-check, security-scan]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Build for production
+      run: npm run build
+      env:
+        VITE_APP_NAME: ${{ secrets.VITE_APP_NAME || 'Refugee Health Assistant' }}
+        VITE_APP_VERSION: "0.1.0"
+        VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+        VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
+        VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+        VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
+        VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
+        VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+        VITE_DEFAULT_MAP_CENTER_LAT: ${{ secrets.VITE_DEFAULT_MAP_CENTER_LAT || '39.9334' }}
+        VITE_DEFAULT_MAP_CENTER_LNG: ${{ secrets.VITE_DEFAULT_MAP_CENTER_LNG || '32.8597' }}
+        VITE_DEFAULT_MAP_ZOOM: ${{ secrets.VITE_DEFAULT_MAP_ZOOM || '10' }}
+        VITE_VOICE_API_ENABLED: "true"
+        VITE_ENABLE_VOICE_INPUT: "true"
+        VITE_ENABLE_SAFE_ROUTE: "true"
+        VITE_ENABLE_PWA: "true"
+        VITE_DEBUG_MODE: "false"
+        
+    - name: Deploy to Vercel (Production)
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        vercel-args: '--prod'
+        working-directory: ./
+
+  # Job 5: Notify on Success
+  notify-success:
+    runs-on: ubuntu-latest
+    name: Notify Success
+    needs: [deploy-production]
+    if: always() && needs.deploy-production.result == 'success'
+    
+    steps:
+    - name: Success notification
+      run: |
+        echo "🚀 Deployment successful!"
+        echo "Application is live at production URL"

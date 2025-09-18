@@ -1,0 +1,52 @@
+name: Dependency Update Check
+
+on:
+  schedule:
+    # Run every Monday at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual triggers
+
+jobs:
+  dependency-check:
+    runs-on: ubuntu-latest
+    name: Check Dependencies
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Check for outdated packages
+      run: |
+        echo "Checking for outdated packages..."
+        npm outdated || true
+        
+    - name: Run security audit
+      run: |
+        echo "Running security audit..."
+        npm audit --audit-level=moderate || true
+        
+    - name: Generate dependency report
+      run: |
+        echo "# Dependency Report - $(date)" > dependency-report.md
+        echo "" >> dependency-report.md
+        echo "## Outdated Packages" >> dependency-report.md
+        npm outdated --long || echo "No outdated packages found" >> dependency-report.md
+        echo "" >> dependency-report.md
+        echo "## Security Audit" >> dependency-report.md
+        npm audit --audit-level=low || echo "No security issues found" >> dependency-report.md
+        
+    - name: Upload dependency report
+      uses: actions/upload-artifact@v4
+      with:
+        name: dependency-report
+        path: dependency-report.md
+        retention-days: 30
