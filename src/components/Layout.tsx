@@ -52,7 +52,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="grid grid-cols-3 gap-2">
             <MobileNavItem href="/ai-triage" label="AI Assessment" />
             <MobileNavItem href="/multilingual" label="Translate" />
-            <MobileNavItem href="/body-mapping" label="Body Map" />
+            {/*<MobileNavItem href="/body-mapping" label="Body Map" />*/}
             <MobileNavItem href="/mental-health" label="Mental Health" />
             <MobileNavItem href="/" label="Dashboard" />
           </div>

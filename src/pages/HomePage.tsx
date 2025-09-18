@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
             </svg>
           }
           link="/map"
-          badge="Computer Vision"
+          badge="Local Navigation"
           badgeColor="success"
         />
         
@@ -70,7 +70,7 @@ const HomePage: React.FC = () => {
           badge="Multilingual"
           badgeColor="warning"
         />
-        
+        {/*}
         <FeatureCard
           title="Interactive Body Mapping"
           description="Precise pain and symptom localization with AI-powered analysis to communicate health concerns effectively with healthcare providers."
@@ -83,7 +83,7 @@ const HomePage: React.FC = () => {
           badge="Interactive"
           badgeColor="neutral"
         />
-        
+        */}
         <FeatureCard
           title="Mental Health Support"
           description="Comprehensive mental wellness resources including guided breathing exercises, cultural stories, and crisis intervention protocols."
