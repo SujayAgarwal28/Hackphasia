@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Feature Grid */}
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         <FeatureCard
           title="AI-Powered Triage"
           description="Advanced conversational AI provides personalized health assessments with cultural sensitivity and trauma-informed care protocols."

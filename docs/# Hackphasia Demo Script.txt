@@ -1,0 +1,92 @@
+# Hackphasia Demo Script
+
+Welcome to the demo of **Hackphasia**, an AI-powered health support platform designed for refugee communities. In the next 3 minutes, we’ll walk through the key features, show how the platform works, and explain what each section does.
+
+---
+
+## 1. Introduction
+
+Begin by introducing Hackphasia:
+- “Hackphasia is a comprehensive healthcare platform that leverages AI, computer vision, and multilingual support to provide accessible, culturally sensitive health guidance for displaced populations.”
+
+---
+
+## 2. Home Page Overview
+
+- **Show the Home Page**: Point out the hero section and tagline.
+- “Here, users see the main features: AI-powered triage, maps & clinics, multilingual support, body mapping, mental health, and voice assessment.”
+- **Feature Grid**: Hover over each card to show the description and icons.
+- “Each card links to a specialized tool. For example, ‘AI-Powered Triage’ starts a health assessment, while ‘Maps & Clinics’ helps locate nearby medical facilities.”
+
+---
+
+## 3. AI Health Assessment
+
+- **Click ‘Start AI Assessment’ or the ‘AI-Powered Triage’ card.**
+- “This tool uses conversational AI to guide users through a health check, considering cultural and trauma-informed care protocols.”
+- “Users answer questions, and the AI provides personalized recommendations.”
+
+---
+
+## 4. Maps & Clinics
+
+- **Click the ‘Maps & Clinics’ card or use the mobile navigation to go to `/map` or `/maps`.**
+- “This section displays an interactive map, helping users find the nearest clinics and healthcare facilities using real-time location services.”
+- “It’s especially useful for refugees in unfamiliar areas.”
+
+---
+
+## 5. Multilingual Support
+
+- **Click the ‘Multilingual Support’ card.**
+- “Hackphasia offers translation services for medical terminology and emergency phrases in multiple languages.”
+- “Users can select their language from the dropdown in the header for a localized experience.”
+
+---
+
+## 6. Interactive Body Mapping
+
+- **Click the ‘Interactive Body Mapping’ card.**
+- “Users can select body zones, pain level, symptoms, and add notes.”
+- “When they click ‘Generate First Aid & Download,’ the platform uses Gemini AI to generate a first aid report and possible diagnoses, which is downloaded as a text file.”
+
+---
+
+## 7. Mental Health Support
+
+- **Click the ‘Mental Health Support’ card.**
+- “This section provides mental wellness resources, including breathing exercises, audio stories, and a chatbot for advice.”
+- “Users can track their mood and access crisis support information.”
+
+---
+
+## 8. Voice Assessment
+
+- **Click the ‘Voice Assessment’ card.**
+- “Users can report symptoms using speech-to-text, supporting multiple languages for accessibility.”
+
+---
+
+## 9. Footer & Emergency Info
+
+- **Scroll to the footer.**
+- “Quick access links and emergency support information are always available.”
+- “Users can click ‘Access Emergency Services’ for immediate help.”
+
+---
+
+## 10. Navigation
+
+- **Show the mobile navigation menu.**
+- “All main features are accessible from the mobile nav, including AI assessment, body mapping, mental health, and maps.”
+
+---
+
+## 11. Summary
+
+- “Hackphasia empowers refugees with AI-driven health tools, multilingual support, and easy access to clinics and emergency services.”
+- “Every click is designed to guide users to the right help, in their language, with cultural sensitivity.”
+
+---
+
+**End of Demo. Invite questions or further exploration.**

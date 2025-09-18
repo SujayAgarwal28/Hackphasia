@@ -104,11 +104,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <p>24/7 AI-powered health assistance</p>
                 <p>Multilingual crisis intervention</p>
                 <p>Cultural sensitivity protocols</p>
-                <div className="mt-4">
-                  <button className="btn-danger btn-sm w-full">
-                    Access Emergency Services
-                  </button>
-                </div>
               </div>
             </div>
           </div>
