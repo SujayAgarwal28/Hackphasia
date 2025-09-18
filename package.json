@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-vis": "^1.5.1",
     "@types/node": "^24.5.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
