@@ -1,5 +1,542 @@
 [
   {
+    "name": "All India Institute of Medical Sciences (AIIMS): New Delhi, Delhi, India",
+    "lat": 28.63576,
+    "lng": 77.22445,
+    "services": [
+      "Pediatrics",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Medanta - The Medicity: Gurugram, Haryana, India",
+    "lat": 28.4389466,
+    "lng": 77.0402727,
+    "services": [
+      "Neurology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Christian Medical College (CMC): Vellore, Tamil Nadu, India",
+    "lat": 12.9250412,
+    "lng": 79.1358825,
+    "services": [
+      "Mental Health",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Tata Memorial Hospital: Mumbai, Maharashtra, India",
+    "lat": 19.004984,
+    "lng": 72.8432125,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Indraprastha Apollo Hospital: New Delhi, Delhi, India",
+    "lat": 28.63576,
+    "lng": 77.22445,
+    "services": [
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Fortis Memorial Research Institute: Gurugram, Haryana, India",
+    "lat": 28.4571214,
+    "lng": 77.072768,
+    "services": [
+      "Cardiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Kokilaben Dhirubhai Ambani Hospital: Mumbai, Maharashtra, India",
+    "lat": 19.1312557,
+    "lng": 72.8246749,
+    "services": [
+      "Emergency",
+      "Neurology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Manipal Hospitals: Bengaluru, Karnataka, India",
+    "lat": 12.9582592,
+    "lng": 77.7453915,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Aster Medcity: Kochi, Kerala, India",
+    "lat": 9.93988,
+    "lng": 76.26022,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Post Graduate Institute of Medical Education and Research (PGIMER): Chandigarh, India",
+    "lat": 30.73629,
+    "lng": 76.7884,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Mayo Clinic: Rochester, Minnesota, U.S.",
+    "lat": 44.0225389,
+    "lng": -92.4666075,
+    "services": [
+      "General",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Cleveland Clinic: Cleveland, Ohio, U.S.",
+    "lat": 41.5021719,
+    "lng": -81.6198195,
+    "services": [
+      "Maternity",
+      "General",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "The Johns Hopkins Hospital: Baltimore, Maryland, U.S.",
+    "lat": 39.2961786,
+    "lng": -76.5914676,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Massachusetts General Hospital: Boston, Massachusetts, U.S.",
+    "lat": 42.3628604,
+    "lng": -71.068753,
+    "services": [
+      "Emergency",
+      "Maternity",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Stanford Health Care: Stanford, California, U.S.",
+    "lat": 37.4435963,
+    "lng": -122.1704114,
+    "services": [
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "UCLA Health: Los Angeles, California, U.S.",
+    "lat": 34.1430247,
+    "lng": -118.7037377,
+    "services": [
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "The Mount Sinai Hospital: New York, New York, U.S.",
+    "lat": 40.7899644,
+    "lng": -73.9532282,
+    "services": [
+      "Surgery",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Northwestern Memorial Hospital: Chicago, Illinois, U.S.",
+    "lat": 41.894585,
+    "lng": -87.6215462,
+    "services": [
+      "Cardiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Cedars-Sinai Medical Center: Los Angeles, California, U.S.",
+    "lat": 34.0751604,
+    "lng": -118.3810936,
+    "services": [
+      "General",
+      "Maternity",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Houston Methodist Hospital: Houston, Texas, U.S.",
+    "lat": 29.7108167,
+    "lng": -95.399264,
+    "services": [
+      "Emergency",
+      "Pediatrics",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Toronto General - University Health Network: Toronto, Ontario, Canada",
+    "lat": 43.70011,
+    "lng": -79.4163,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Sunnybrook Health Sciences Centre: Toronto, Ontario, Canada",
+    "lat": 43.7227482,
+    "lng": -79.3755416,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Mount Sinai Hospital: Toronto, Ontario, Canada",
+    "lat": 43.6574502,
+    "lng": -79.3903211,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Charité - Universitätsmedizin Berlin: Berlin, Germany",
+    "lat": 52.5299885,
+    "lng": 13.3486639,
+    "services": [
+      "Cardiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Universitätsklinikum Heidelberg: Heidelberg, Germany",
+    "lat": 49.4171523,
+    "lng": 8.6647226,
+    "services": [
+      "Maternity",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "LMU Klinikum: Munich, Germany",
+    "lat": 48.1107056,
+    "lng": 11.4693622,
+    "services": [
+      "Mental Health",
+      "Radiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Universitätsspital Zürich: Zurich, Switzerland",
+    "lat": 47.3777451,
+    "lng": 8.5514167,
+    "services": [
+      "Maternity",
+      "Neurology",
+      "General"
+    ]
+  },
+  {
+    "name": "Centre hospitalier universitaire vaudois (CHUV): Lausanne, Switzerland",
+    "lat": 46.516,
+    "lng": 6.63282,
+    "services": [
+      "Cardiology",
+      "Emergency",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Universitätsspital Basel: Basel, Switzerland",
+    "lat": 47.5616817,
+    "lng": 7.5831365,
+    "services": [
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "The University of Tokyo Hospital: Tokyo, Japan",
+    "lat": 35.7120155,
+    "lng": 139.7653776,
+    "services": [
+      "Radiology",
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "St. Luke's International Hospital: Tokyo, Japan",
+    "lat": 35.6673179,
+    "lng": 139.7771616,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Asan Medical Center: Seoul, South Korea",
+    "lat": 37.5263041,
+    "lng": 127.1096013,
+    "services": [
+      "Maternity",
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Samsung Medical Center: Seoul, South Korea",
+    "lat": 37.4884518,
+    "lng": 127.0853414,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "AP-HP - Hôpital Universitaire Pitié Salpêtrière: Paris, France",
+    "lat": 48.820517,
+    "lng": 2.341496,
+    "services": [
+      "Maternity",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "AP-HP - Hôpital Européen Georges Pompidou: Paris, France",
+    "lat": 48.854054,
+    "lng": 2.355056,
+    "services": [
+      "Maternity",
+      "General",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Rigshospitalet - København: Copenhagen, Denmark",
+    "lat": 55.6970438,
+    "lng": 12.565895,
+    "services": [
+      "Surgery",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Aarhus Universitetshospital: Aarhus, Denmark",
+    "lat": 56.1910097,
+    "lng": 10.1701402,
+    "services": [
+      "Surgery",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "St Thomas' Hospital: London, United Kingdom",
+    "lat": 51.4990644,
+    "lng": -0.1186968,
+    "services": [
+      "Pediatrics",
+      "General",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "The Royal Marsden Hospital: London, United Kingdom",
+    "lat": 51.4905689,
+    "lng": -0.1726214,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Royal Prince Alfred Hospital: Camperdown, Australia",
+    "lat": -33.889186,
+    "lng": 151.181472,
+    "services": [
+      "Neurology",
+      "Surgery",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "The Royal Melbourne Hospital: Melbourne, Australia",
+    "lat": -37.7986604,
+    "lng": 144.9564244,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Policlinico Universitario A. Gemelli: Rome, Italy",
+    "lat": 41.89193,
+    "lng": 12.51133,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Sheba Medical Center: Ramat Gan, Israel",
+    "lat": 32.0471841,
+    "lng": 34.8452013,
+    "services": [
+      "Mental Health",
+      "Neurology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Rabin Medical Center: Petah Tikva, Israel",
+    "lat": 32.0886888,
+    "lng": 34.8671956,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Singapore General Hospital (SGH): Singapore",
+    "lat": 1.2794489,
+    "lng": 103.8362739,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Mount Elizabeth Hospital: Singapore",
+    "lat": 1.3051961,
+    "lng": 103.8355363,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Hospital Israelita Albert Einstein: São Paulo, Brazil",
+    "lat": -23.5332675,
+    "lng": -46.6754824,
+    "services": [
+      "Cardiology",
+      "Emergency",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Hospital Universitario La Paz: Madrid, Spain",
+    "lat": 40.4814703,
+    "lng": -3.6872849,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "UZ Leuven: Leuven, Belgium",
+    "lat": 50.8801368,
+    "lng": 4.6934209,
+    "services": [
+      "Oncology",
+      "Surgery",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Helsinki University Hospital: Helsinki, Finland",
+    "lat": 60.2235701,
+    "lng": 25.0204656,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Oslo Universitetssykehus: Oslo, Norway",
+    "lat": 59.9489712,
+    "lng": 10.7144341,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Karolinska Universitetssjukhuset: Stockholm, Sweden",
+    "lat": 59.3508017,
+    "lng": 18.0333186,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Hospital Médica Sur: Mexico City, Mexico",
+    "lat": 19.4139311,
+    "lng": -99.1612587,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Bumrungrad International Hospital: Bangkok, Thailand",
+    "lat": 13.746742,
+    "lng": 100.552457,
+    "services": [
+      "Cardiology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Clínica Alemana Vitacura: Santiago, Chile",
+    "lat": -33.3925103,
+    "lng": -70.5729919,
+    "services": [
+      "Surgery",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Chris Hani Baragwanath Hospital: Johannesburg, South Africa",
+    "lat": -26.2614737,
+    "lng": 27.9388815,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "American Hospital Dubai: Dubai, United Arab Emirates",
+    "lat": 25.2355738,
+    "lng": 55.3130763,
+    "services": [
+      "Mental Health",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "King Faisal Specialist Hospital and Research Center: Riyadh, Saudi Arabia",
+    "lat": 23.05,
+    "lng": 45.55,
+    "services": [
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Ankara Bilkent City Hospital: Ankara, Turkey",
+    "lat": 39.91987,
+    "lng": 32.85427,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "National Hospital of Sri Lanka: Colombo, Sri Lanka",
+    "lat": 6.9183275,
+    "lng": 79.8683654,
+    "services": [
+      "Pediatrics",
+      "Maternity"
+    ]
+  }
+  ,
+  {
     "name": "1600 Amphitheatre Parkway, Mountain View, CA",
     "lat": 37.4224857,
     "lng": -122.0855846,

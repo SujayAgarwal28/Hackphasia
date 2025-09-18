@@ -10,12 +10,15 @@ dist/
 build/
 .vite/
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+firebase_secrets.json
+*firebase*credentials*.json
+*serviceAccount*.json
 
 # IDE files
 .vscode/
@@ -97,3 +100,5 @@ firestore-debug.log
 
 # Local development
 .local
+
+firebase_secrets.json
