@@ -1,0 +1,4684 @@
+[
+  {
+    "name": "1600 Amphitheatre Parkway, Mountain View, CA",
+    "lat": 37.4224857,
+    "lng": -122.0855846,
+    "services": [
+      "General",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Hôpital Pitié Salpêtrière, Paris, France",
+    "lat": 48.8375846,
+    "lng": 2.3652547,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "St. Thomas' Hospital, London, UK",
+    "lat": 51.4990645,
+    "lng": -0.1186968,
+    "services": [
+      "Radiology",
+      "General",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "J.P. Nariyan Path, R.R. Nagar, Nagpur, Maharashtra, India",
+    "lat": 21.14631,
+    "lng": 79.08491,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Hospital General de México, Mexico City, Mexico",
+    "lat": 19.4133968,
+    "lng": -99.1519574,
+    "services": [
+      "Emergency",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Mass General Hospital, Boston, MA, USA",
+    "lat": 42.3628604,
+    "lng": -71.068753,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "The Johns Hopkins Hospital, Baltimore, MD, USA",
+    "lat": 39.2961786,
+    "lng": -76.5914676,
+    "services": [
+      "Cardiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Cleveland Clinic, Cleveland, OH, USA",
+    "lat": 41.5021719,
+    "lng": -81.6198195,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Mayo Clinic, Rochester, MN, USA",
+    "lat": 44.0225389,
+    "lng": -92.4666075,
+    "services": [
+      "Emergency",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "NewYork-Presbyterian Hospital, New York, NY, USA",
+    "lat": 40.6678376,
+    "lng": -73.9791449,
+    "services": [
+      "Maternity",
+      "Oncology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Cedars-Sinai Medical Center, Los Angeles, CA, USA",
+    "lat": 34.0751604,
+    "lng": -118.3810936,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "UCLA Medical Center, Los Angeles, CA, USA",
+    "lat": 34.0657391,
+    "lng": -118.445187,
+    "services": [
+      "Maternity",
+      "Pediatrics",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Mount Sinai Hospital, New York, NY, USA",
+    "lat": 40.7899644,
+    "lng": -73.9532282,
+    "services": [
+      "Oncology",
+      "Surgery",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Stanford Health Care, Palo Alto, CA, USA",
+    "lat": 37.4435963,
+    "lng": -122.1704114,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Duke University Hospital, Durham, NC, USA",
+    "lat": 36.0070213,
+    "lng": -78.9373479,
+    "services": [
+      "Oncology",
+      "General"
+    ]
+  },
+  {
+    "name": "Northwestern Memorial Hospital, Chicago, IL, USA",
+    "lat": 41.894585,
+    "lng": -87.6215462,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "University of Chicago Medical Center, Chicago, IL, USA",
+    "lat": 41.85003,
+    "lng": -87.65005,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Barnes-Jewish Hospital, St. Louis, MO, USA",
+    "lat": 38.6371895,
+    "lng": -90.2643637,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Houston Methodist Hospital, Houston, TX, USA",
+    "lat": 29.7108167,
+    "lng": -95.399264,
+    "services": [
+      "Neurology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Emory University Hospital, Atlanta, GA, USA",
+    "lat": 33.792151,
+    "lng": -84.3220829,
+    "services": [
+      "Emergency",
+      "Oncology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "University of Washington Medical Center, Seattle, WA, USA",
+    "lat": 47.6494115,
+    "lng": -122.3076383,
+    "services": [
+      "Cardiology",
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "University of Michigan Hospital, Ann Arbor, MI, USA",
+    "lat": 42.27756,
+    "lng": -83.74088,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Indiana University Health, Indianapolis, IN, USA",
+    "lat": 39.7807424,
+    "lng": -86.1589993,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Vanderbilt University Medical Center, Nashville, TN, USA",
+    "lat": 36.1409237,
+    "lng": -86.8016342,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "University of Colorado Hospital, Aurora, CO, USA",
+    "lat": 39.7425435,
+    "lng": -104.841661,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "UC San Diego Health, San Diego, CA, USA",
+    "lat": 33.0222369,
+    "lng": -117.086106,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "UC San Francisco Medical Center, San Francisco, CA, USA",
+    "lat": 37.77493,
+    "lng": -122.41942,
+    "services": [
+      "Emergency",
+      "General"
+    ]
+  },
+  {
+    "name": "Penn Presbyterian Medical Center, Philadelphia, PA, USA",
+    "lat": 39.9584948,
+    "lng": -75.1993287,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Thomas Jefferson University Hospital, Philadelphia, PA, USA",
+    "lat": 39.9493479,
+    "lng": -75.1580147,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "UPMC Presbyterian Shadyside, Pittsburgh, PA, USA",
+    "lat": 40.44062,
+    "lng": -79.99589,
+    "services": [
+      "Cardiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Oregon Health & Science University Hospital, Portland, OR, USA",
+    "lat": 45.499038,
+    "lng": -122.6856953,
+    "services": [
+      "Cardiology",
+      "General",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "University of Utah Health, Salt Lake City, UT, USA",
+    "lat": 40.7586262,
+    "lng": -111.8223133,
+    "services": [
+      "Maternity",
+      "Mental Health",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Ohio State University Wexner Medical Center, Columbus, OH, USA",
+    "lat": 39.9948571,
+    "lng": -83.0198739,
+    "services": [
+      "Neurology",
+      "General",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Brigham and Women's Hospital, Boston, MA, USA",
+    "lat": 42.3356457,
+    "lng": -71.1060376,
+    "services": [
+      "Mental Health",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Beth Israel Deaconess Medical Center, Boston, MA, USA",
+    "lat": 42.3397971,
+    "lng": -71.1048718,
+    "services": [
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Yale New Haven Hospital, New Haven, CT, USA",
+    "lat": 41.3046035,
+    "lng": -72.9355941,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Hartford Hospital, Hartford, CT, USA",
+    "lat": 41.7540688,
+    "lng": -72.6793902,
+    "services": [
+      "Radiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Dartmouth-Hitchcock Medical Center, Lebanon, NH, USA",
+    "lat": 43.6756843,
+    "lng": -72.2701018,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Rhode Island Hospital, Providence, RI, USA",
+    "lat": 41.8110744,
+    "lng": -71.4089995,
+    "services": [
+      "Cardiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "University of Vermont Medical Center, Burlington, VT, USA",
+    "lat": 44.4784929,
+    "lng": -73.1929192,
+    "services": [
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Maine Medical Center, Portland, ME, USA",
+    "lat": 43.6531775,
+    "lng": -70.2762545,
+    "services": [
+      "Pediatrics",
+      "Mental Health",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Albany Medical Center, Albany, NY, USA",
+    "lat": 42.6532131,
+    "lng": -73.7766789,
+    "services": [
+      "Mental Health",
+      "Oncology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Montefiore Medical Center, Bronx, NY, USA",
+    "lat": 40.8800853,
+    "lng": -73.8798439,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Stony Brook University Hospital, Stony Brook, NY, USA",
+    "lat": 40.9082693,
+    "lng": -73.1151875,
+    "services": [
+      "Cardiology",
+      "Radiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Hackensack University Medical Center, Hackensack, NJ, USA",
+    "lat": 40.8837051,
+    "lng": -74.0559409,
+    "services": [
+      "General",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Morristown Medical Center, Morristown, NJ, USA",
+    "lat": 40.789571,
+    "lng": -74.4656846,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "ChristianaCare, Newark, DE, USA",
+    "lat": 39.6879885,
+    "lng": -75.6754019,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "MedStar Georgetown University Hospital, Washington, D.C., USA",
+    "lat": 38.9111463,
+    "lng": -77.0753462,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Inova Fairfax Hospital, Falls Church, VA, USA",
+    "lat": 38.8574108,
+    "lng": -77.2284948,
+    "services": [
+      "Neurology",
+      "Cardiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Sentara Norfolk General Hospital, Norfolk, VA, USA",
+    "lat": 36.8624603,
+    "lng": -76.3038338,
+    "services": [
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "University of Virginia Health, Charlottesville, VA, USA",
+    "lat": 38.0028463,
+    "lng": -78.4992914,
+    "services": [
+      "Pediatrics",
+      "Radiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "UNC Medical Center, Chapel Hill, NC, USA",
+    "lat": 35.9050278,
+    "lng": -79.0506418,
+    "services": [
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Wake Forest Baptist Medical Center, Winston-Salem, NC, USA",
+    "lat": 36.0898378,
+    "lng": -80.2677122,
+    "services": [
+      "Oncology",
+      "Pediatrics",
+      "General"
+    ]
+  },
+  {
+    "name": "Medical University of South Carolina, Charleston, SC, USA",
+    "lat": 32.7853384,
+    "lng": -79.9501885,
+    "services": [
+      "Emergency",
+      "Radiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Greenville Memorial Hospital, Greenville, SC, USA",
+    "lat": 34.819598,
+    "lng": -82.4104176,
+    "services": [
+      "Pediatrics",
+      "Oncology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Piedmont Atlanta Hospital, Atlanta, GA, USA",
+    "lat": 33.8093759,
+    "lng": -84.3954273,
+    "services": [
+      "General",
+      "Oncology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "WellStar Kennestone Hospital, Marietta, GA, USA",
+    "lat": 33.9685978,
+    "lng": -84.552905,
+    "services": [
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "UF Health Shands Hospital, Gainesville, FL, USA",
+    "lat": 29.6917937,
+    "lng": -82.4361118,
+    "services": [
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "Tampa General Hospital, Tampa, FL, USA",
+    "lat": 27.9375006,
+    "lng": -82.4589003,
+    "services": [
+      "Surgery",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Jackson Memorial Hospital, Miami, FL, USA",
+    "lat": 25.7916705,
+    "lng": -80.2126015,
+    "services": [
+      "Pediatrics",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Orlando Health Orlando Regional Medical Center, Orlando, FL, USA",
+    "lat": 28.53834,
+    "lng": -81.37924,
+    "services": [
+      "Radiology",
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Baptist Hospital of Miami, Miami, FL, USA",
+    "lat": 25.6851342,
+    "lng": -80.338609,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "University of Alabama at Birmingham Hospital, Birmingham, AL, USA",
+    "lat": 33.52066,
+    "lng": -86.80249,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Ochsner Medical Center, New Orleans, LA, USA",
+    "lat": 29.9610677,
+    "lng": -90.1456737,
+    "services": [
+      "Cardiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "University of Mississippi Medical Center, Jackson, MS, USA",
+    "lat": 32.3309299,
+    "lng": -90.1723002,
+    "services": [
+      "General",
+      "Pediatrics",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "University of Arkansas for Medical Sciences Medical Center, Little Rock, AR, USA",
+    "lat": 34.74648,
+    "lng": -92.28959,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Methodist University Hospital, Memphis, TN, USA",
+    "lat": 35.14953,
+    "lng": -90.04898,
+    "services": [
+      "Radiology",
+      "General"
+    ]
+  },
+  {
+    "name": "Baptist Memorial Hospital-Memphis, Memphis, TN, USA",
+    "lat": 35.1286508,
+    "lng": -89.8607126,
+    "services": [
+      "General",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "St. Jude Children's Research Hospital, Memphis, TN, USA",
+    "lat": 35.1543896,
+    "lng": -90.042221,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "University of Texas Southwestern Medical Center, Dallas, TX, USA",
+    "lat": 32.81223,
+    "lng": -96.83999,
+    "services": [
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Baylor University Medical Center, Dallas, TX, USA",
+    "lat": 32.7899432,
+    "lng": -96.7779235,
+    "services": [
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Methodist Dallas Medical Center, Dallas, TX, USA",
+    "lat": 32.7612534,
+    "lng": -96.825046,
+    "services": [
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Texas Medical Center, Houston, TX, USA",
+    "lat": 29.7100796,
+    "lng": -95.3973355,
+    "services": [
+      "Mental Health",
+      "Oncology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "MD Anderson Cancer Center, Houston, TX, USA",
+    "lat": 29.7076703,
+    "lng": -95.3978436,
+    "services": [
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Memorial Hermann-Texas Medical Center, Houston, TX, USA",
+    "lat": 29.7133159,
+    "lng": -95.3954173,
+    "services": [
+      "General",
+      "Oncology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "St. Luke's Health-Baylor St. Luke's Medical Center, Houston, TX, USA",
+    "lat": 29.76328,
+    "lng": -95.36327,
+    "services": [
+      "General",
+      "Pediatrics",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Texas Children's Hospital, Houston, TX, USA",
+    "lat": 29.7069019,
+    "lng": -95.402335,
+    "services": [
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "University Hospital, San Antonio, TX, USA",
+    "lat": 29.5078264,
+    "lng": -98.5780943,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Seton Medical Center Austin, Austin, TX, USA",
+    "lat": 30.3050942,
+    "lng": -97.7461123,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Methodist Hospital, San Antonio, TX, USA",
+    "lat": 29.5084345,
+    "lng": -98.5719332,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Integris Baptist Medical Center, Oklahoma City, OK, USA",
+    "lat": 35.5294826,
+    "lng": -97.5764997,
+    "services": [
+      "Oncology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Mercy Hospital Oklahoma City, Oklahoma City, OK, USA",
+    "lat": 35.6071598,
+    "lng": -97.600346,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Saint Francis Hospital, Tulsa, OK, USA",
+    "lat": 36.0715575,
+    "lng": -95.9197326,
+    "services": [
+      "Maternity",
+      "Neurology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "University of Kansas Hospital, Kansas City, KS, USA",
+    "lat": 39.0559267,
+    "lng": -94.6090332,
+    "services": [
+      "Surgery",
+      "Radiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Kansas City, MO",
+    "lat": 39.100105,
+    "lng": -94.5781416,
+    "services": [
+      "General",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "University of Missouri Hospital, Columbia, MO, USA",
+    "lat": 38.95171,
+    "lng": -92.33407,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "CoxHealth, Springfield, MO, USA",
+    "lat": 37.1664974,
+    "lng": -93.3230001,
+    "services": [
+      "Emergency",
+      "Oncology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Washington University Medical Center, St. Louis, MO, USA",
+    "lat": 38.62727,
+    "lng": -90.19789,
+    "services": [
+      "Maternity",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Nebraska Medical Center, Omaha, NE, USA",
+    "lat": 41.2539407,
+    "lng": -95.9773388,
+    "services": [
+      "Pediatrics",
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "CHI Health Creighton University Medical Center - Bergan Mercy, Omaha, NE, USA",
+    "lat": 41.2395005,
+    "lng": -96.0311232,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "University of Iowa Hospitals and Clinics, Iowa City, IA, USA",
+    "lat": 41.66113,
+    "lng": -91.53017,
+    "services": [
+      "Emergency",
+      "General",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "University of Wisconsin Hospital and Clinics, Madison, WI, USA",
+    "lat": 43.629002,
+    "lng": -89.774414,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Froedtert Hospital and the Medical College of Wisconsin, Milwaukee, WI, USA",
+    "lat": 45.176885,
+    "lng": -89.722628,
+    "services": [
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Advocate Christ Medical Center, Oak Lawn, IL, USA",
+    "lat": 41.7217948,
+    "lng": -87.7302458,
+    "services": [
+      "Maternity",
+      "Neurology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Rush University Medical Center, Chicago, IL, USA",
+    "lat": 41.873526,
+    "lng": -87.6691012,
+    "services": [
+      "Radiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Loyola University Medical Center, Maywood, IL, USA",
+    "lat": 41.8582703,
+    "lng": -87.8351638,
+    "services": [
+      "Mental Health",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Indiana University Health Methodist Hospital, Indianapolis, IN, USA",
+    "lat": 39.7912405,
+    "lng": -86.1631758,
+    "services": [
+      "Oncology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "St. Vincent Hospital, Indianapolis, IN, USA",
+    "lat": 39.9088574,
+    "lng": -86.1960733,
+    "services": [
+      "Emergency",
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "The Christ Hospital, Cincinnati, OH, USA",
+    "lat": 39.1208388,
+    "lng": -84.5111128,
+    "services": [
+      "Emergency",
+      "Pediatrics",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "University of Cincinnati Medical Center, Cincinnati, OH, USA",
+    "lat": 39.1382172,
+    "lng": -84.5033265,
+    "services": [
+      "Neurology",
+      "Cardiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Case Western Reserve University, Cleveland, OH, USA",
+    "lat": 41.5013869,
+    "lng": -81.6007022,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "University Hospitals Cleveland Medical Center, Cleveland, OH, USA",
+    "lat": 41.5057921,
+    "lng": -81.606233,
+    "services": [
+      "Cardiology",
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "MetroHealth Medical Center, Cleveland, OH, USA",
+    "lat": 41.4604102,
+    "lng": -81.697947,
+    "services": [
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Beaumont Hospital, Royal Oak, MI, USA",
+    "lat": 42.5138736,
+    "lng": -83.1928803,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Henry Ford Hospital, Detroit, MI, USA",
+    "lat": 42.3678522,
+    "lng": -83.0855196,
+    "services": [
+      "Oncology",
+      "Cardiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Spectrum Health Butterworth Hospital, Grand Rapids, MI, USA",
+    "lat": 42.969285,
+    "lng": -85.6652013,
+    "services": [
+      "Emergency",
+      "Oncology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Munson Medical Center, Traverse City, MI, USA",
+    "lat": 44.7608506,
+    "lng": -85.6422724,
+    "services": [
+      "Cardiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Parkview Regional Medical Center, Fort Wayne, IN, USA",
+    "lat": 41.1865271,
+    "lng": -85.1012666,
+    "services": [
+      "General",
+      "Oncology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Eskenazi Health, Indianapolis, IN, USA",
+    "lat": 39.7765204,
+    "lng": -86.1830208,
+    "services": [
+      "Emergency",
+      "General"
+    ]
+  },
+  {
+    "name": "University of Kentucky Albert B. Chandler Hospital, Lexington, KY, USA",
+    "lat": 37.98869,
+    "lng": -84.47772,
+    "services": [
+      "Emergency",
+      "Mental Health",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "University of Louisville Hospital, Louisville, KY, USA",
+    "lat": 38.2483107,
+    "lng": -85.7450689,
+    "services": [
+      "Neurology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Baptist Health Lexington, Lexington, KY, USA",
+    "lat": 38.0186999,
+    "lng": -84.5123542,
+    "services": [
+      "Emergency",
+      "Cardiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Baptist Health Louisville, Louisville, KY, USA",
+    "lat": 38.2386809,
+    "lng": -85.6391978,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "TriStar Centennial Medical Center, Nashville, TN, USA",
+    "lat": 36.1535635,
+    "lng": -86.8082472,
+    "services": [
+      "Surgery",
+      "General"
+    ]
+  },
+  {
+    "name": "Ascension Saint Thomas Hospital, Nashville, TN, USA",
+    "lat": 36.1538388,
+    "lng": -86.8024571,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "University of Tennessee Medical Center, Knoxville, TN, USA",
+    "lat": 35.940071,
+    "lng": -83.9434785,
+    "services": [
+      "General",
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Wellmont Holston Valley Medical Center, Kingsport, TN, USA",
+    "lat": 36.54843,
+    "lng": -82.56182,
+    "services": [
+      "Emergency",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "University of New Mexico Hospital, Albuquerque, NM, USA",
+    "lat": 35.0884989,
+    "lng": -106.6179208,
+    "services": [
+      "Neurology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Presbyterian Hospital, Albuquerque, NM, USA",
+    "lat": 35.0809227,
+    "lng": -106.6341359,
+    "services": [
+      "Neurology",
+      "Emergency",
+      "General"
+    ]
+  },
+  {
+    "name": "St. David's Medical Center, Austin, TX, USA",
+    "lat": 30.2896987,
+    "lng": -97.7256859,
+    "services": [
+      "Maternity",
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Baylor Scott & White Medical Center - Temple, Temple, TX, USA",
+    "lat": 31.0778576,
+    "lng": -97.3627301,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "University Medical Center, Lubbock, TX, USA",
+    "lat": 33.5892032,
+    "lng": -101.8919947,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Texas Health Harris Methodist Hospital Fort Worth, Fort Worth, TX, USA",
+    "lat": 32.7369675,
+    "lng": -97.338859,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Cook Children's Medical Center, Fort Worth, TX, USA",
+    "lat": 32.7365621,
+    "lng": -97.3411127,
+    "services": [
+      "Mental Health",
+      "Cardiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Medical City Dallas Hospital, Dallas, TX, USA",
+    "lat": 32.9121413,
+    "lng": -96.7738531,
+    "services": [
+      "Mental Health",
+      "Pediatrics",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Children's Health, Dallas, TX, USA",
+    "lat": 32.6037695,
+    "lng": -96.8478892,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Methodist Le Bonheur Healthcare, Memphis, TN, USA",
+    "lat": 35.14953,
+    "lng": -90.04898,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Bernardine Medical Center, San Bernardino, CA, USA",
+    "lat": 34.1346949,
+    "lng": -117.2763932,
+    "services": [
+      "Maternity",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Loma Linda University Medical Center, Loma Linda, CA, USA",
+    "lat": 34.0491119,
+    "lng": -117.2634355,
+    "services": [
+      "Pediatrics",
+      "General"
+    ]
+  },
+  {
+    "name": "Arrowhead Regional Medical Center, Colton, CA, USA",
+    "lat": 34.0737033,
+    "lng": -117.3506708,
+    "services": [
+      "Cardiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Kaiser Permanente Fontana Medical Center, Fontana, CA, USA",
+    "lat": 34.0730859,
+    "lng": -117.4322961,
+    "services": [
+      "Cardiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "San Antonio Regional Hospital, Upland, CA, USA",
+    "lat": 34.1018422,
+    "lng": -117.6375667,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Huntington Hospital, Pasadena, CA, USA",
+    "lat": 34.1332261,
+    "lng": -118.1522436,
+    "services": [
+      "Radiology",
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Torrance Memorial Medical Center, Torrance, CA, USA",
+    "lat": 33.83585,
+    "lng": -118.34063,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Hoag Hospital Newport Beach, Newport Beach, CA, USA",
+    "lat": 33.6234445,
+    "lng": -117.9296041,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Mission Hospital, Mission Viejo, CA, USA",
+    "lat": 33.5614858,
+    "lng": -117.6651193,
+    "services": [
+      "General",
+      "Cardiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Saddleback Medical Center, Laguna Hills, CA, USA",
+    "lat": 33.608634,
+    "lng": -117.7094042,
+    "services": [
+      "Pediatrics",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Scripps Memorial Hospital La Jolla, La Jolla, CA, USA",
+    "lat": 32.884364,
+    "lng": -117.2249398,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Sharp Memorial Hospital, San Diego, CA, USA",
+    "lat": 32.7996981,
+    "lng": -117.1543535,
+    "services": [
+      "Mental Health",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Kaiser Permanente San Diego Medical Center, San Diego, CA, USA",
+    "lat": 32.8301299,
+    "lng": -117.1248701,
+    "services": [
+      "Emergency",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "UC Davis Medical Center, Sacramento, CA, USA",
+    "lat": 38.5549509,
+    "lng": -121.4553922,
+    "services": [
+      "Pediatrics",
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Sutter Medical Center, Sacramento, CA, USA",
+    "lat": 38.5715245,
+    "lng": -121.4687327,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Mercy General Hospital, Sacramento, CA, USA",
+    "lat": 38.5705708,
+    "lng": -121.4530203,
+    "services": [
+      "Emergency",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "John Muir Medical Center, Walnut Creek, CA, USA",
+    "lat": 37.9124564,
+    "lng": -122.0409425,
+    "services": [
+      "Mental Health",
+      "Cardiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Kaiser Permanente Santa Clara Medical Center, Santa Clara, CA, USA",
+    "lat": 37.33665,
+    "lng": -121.9991991,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "El Camino Hospital, Mountain View, CA, USA",
+    "lat": 37.3688599,
+    "lng": -122.0798629,
+    "services": [
+      "General",
+      "Neurology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Sequoia Hospital, Redwood City, CA, USA",
+    "lat": 37.4795113,
+    "lng": -122.255023,
+    "services": [
+      "Maternity",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Good Samaritan Hospital, San Jose, CA, USA",
+    "lat": 37.2522952,
+    "lng": -121.9457139,
+    "services": [
+      "Pediatrics",
+      "Surgery",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Stanford Children's Health, Palo Alto, CA, USA",
+    "lat": 37.441851,
+    "lng": -122.1729343,
+    "services": [
+      "Cardiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Kaiser Permanente Oakland Medical Center, Oakland, CA, USA",
+    "lat": 37.80437,
+    "lng": -122.2708,
+    "services": [
+      "Mental Health",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "UCSF Benioff Children's Hospital Oakland, Oakland, CA, USA",
+    "lat": 37.80437,
+    "lng": -122.2708,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Alta Bates Summit Medical Center, Oakland, CA, USA",
+    "lat": 37.8215138,
+    "lng": -122.2631811,
+    "services": [
+      "Neurology",
+      "General",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Kaiser Permanente San Francisco Medical Center, San Francisco, CA, USA",
+    "lat": 37.77493,
+    "lng": -122.41942,
+    "services": [
+      "General",
+      "Cardiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "California Pacific Medical Center, San Francisco, CA, USA",
+    "lat": 37.7906009,
+    "lng": -122.4322597,
+    "services": [
+      "Surgery",
+      "Radiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "St. Joseph's Hospital and Medical Center, Phoenix, AZ, USA",
+    "lat": 33.44838,
+    "lng": -112.07404,
+    "services": [
+      "Pediatrics",
+      "Cardiology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Banner - University Medical Center Phoenix, Phoenix, AZ, USA",
+    "lat": 33.4647093,
+    "lng": -112.05858,
+    "services": [
+      "Pediatrics",
+      "Emergency",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Banner Desert Medical Center, Mesa, AZ, USA",
+    "lat": 33.3896734,
+    "lng": -111.8771715,
+    "services": [
+      "Surgery",
+      "Oncology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "HonorHealth Scottsdale Osborn Medical Center, Scottsdale, AZ, USA",
+    "lat": 33.4886042,
+    "lng": -111.9229239,
+    "services": [
+      "Neurology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Dignity Health St. Joseph's Hospital and Medical Center, Phoenix, AZ, USA",
+    "lat": 33.4822386,
+    "lng": -112.0800526,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "University of Colorado Hospital, Aurora, CO, USA",
+    "lat": 39.7425435,
+    "lng": -104.841661,
+    "services": [
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "St. Mary's Hospital, Grand Junction, CO, USA",
+    "lat": 39.089382,
+    "lng": -108.562571,
+    "services": [
+      "Surgery",
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Swedish Medical Center, Englewood, CO, USA",
+    "lat": 39.6542801,
+    "lng": -104.9812154,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Rose Medical Center, Denver, CO, USA",
+    "lat": 39.7316371,
+    "lng": -104.9334075,
+    "services": [
+      "Emergency",
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Porter Adventist Hospital, Denver, CO, USA",
+    "lat": 39.67028,
+    "lng": -104.97503,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Sky Ridge Medical Center, Lone Tree, CO, USA",
+    "lat": 39.5289454,
+    "lng": -104.8713302,
+    "services": [
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "HealthONE, Denver, CO, USA",
+    "lat": 39.7506666,
+    "lng": -105.0010144,
+    "services": [
+      "Radiology",
+      "General"
+    ]
+  },
+  {
+    "name": "St. Vincent Healthcare, Billings, MT, USA",
+    "lat": 45.7933592,
+    "lng": -108.5185651,
+    "services": [
+      "Radiology",
+      "Surgery",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Billings Clinic, Billings, MT, USA",
+    "lat": 45.789606,
+    "lng": -108.5136577,
+    "services": [
+      "Radiology",
+      "Maternity",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Providence St. Patrick Hospital, Missoula, MT, USA",
+    "lat": 46.8755462,
+    "lng": -113.9999543,
+    "services": [
+      "Maternity",
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "St. Luke's Health System, Boise, ID, USA",
+    "lat": 43.6135,
+    "lng": -116.20345,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "St. Alphonsus Regional Medical Center, Boise, ID, USA",
+    "lat": 43.6126476,
+    "lng": -116.2574254,
+    "services": [
+      "Surgery",
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Intermountain Medical Center, Murray, UT, USA",
+    "lat": 40.6595568,
+    "lng": -111.8911598,
+    "services": [
+      "Surgery",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "University of Utah Hospital, Salt Lake City, UT, USA",
+    "lat": 40.7715715,
+    "lng": -111.8365802,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "LDS Hospital, Salt Lake City, UT, USA",
+    "lat": 40.779066,
+    "lng": -111.8792891,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "McKay-Dee Hospital, Ogden, UT, USA",
+    "lat": 41.1847611,
+    "lng": -111.9540829,
+    "services": [
+      "Neurology",
+      "General"
+    ]
+  },
+  {
+    "name": "Primary Children's Hospital, Salt Lake City, UT, USA",
+    "lat": 40.7713037,
+    "lng": -111.8388864,
+    "services": [
+      "Cardiology",
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Mountain West Medical Center, Tooele, UT, USA",
+    "lat": 40.566777,
+    "lng": -112.296673,
+    "services": [
+      "Neurology",
+      "Mental Health",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Wyoming Medical Center, Casper, WY, USA",
+    "lat": 42.8477824,
+    "lng": -106.3092552,
+    "services": [
+      "Radiology",
+      "Emergency",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "St. John's Health, Jackson, WY, USA",
+    "lat": 43.47993,
+    "lng": -110.76243,
+    "services": [
+      "General",
+      "Emergency",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Cheyenne Regional Medical Center, Cheyenne, WY, USA",
+    "lat": 41.1404366,
+    "lng": -104.8161912,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "St. Vincent's Medical Center, Bridgeport, CT, USA",
+    "lat": 41.201217,
+    "lng": -73.2018209,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Norwalk Hospital, Norwalk, CT, USA",
+    "lat": 41.1108289,
+    "lng": -73.4219525,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Griffin Hospital, Derby, CT, USA",
+    "lat": 41.3364349,
+    "lng": -73.0905123,
+    "services": [
+      "Oncology",
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Middlesex Hospital, Middletown, CT, USA",
+    "lat": 41.5543991,
+    "lng": -72.6472261,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Waterbury Hospital, Waterbury, CT, USA",
+    "lat": 41.5606248,
+    "lng": -73.0592343,
+    "services": [
+      "Oncology",
+      "Pediatrics",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Danbury Hospital, Danbury, CT, USA",
+    "lat": 41.405218,
+    "lng": -73.4451587,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Greenwich Hospital, Greenwich, CT, USA",
+    "lat": 41.034299,
+    "lng": -73.6306463,
+    "services": [
+      "Maternity",
+      "Radiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "The Hospital of Central Connecticut, New Britain, CT, USA",
+    "lat": 41.6611995,
+    "lng": -72.787005,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Stamford Hospital, Stamford, CT, USA",
+    "lat": 41.0545224,
+    "lng": -73.5525264,
+    "services": [
+      "Maternity",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Bridgeport Hospital, Bridgeport, CT, USA",
+    "lat": 41.1894709,
+    "lng": -73.1674697,
+    "services": [
+      "Radiology",
+      "Pediatrics",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "UMass Memorial Medical Center, Worcester, MA, USA",
+    "lat": 42.2852432,
+    "lng": -71.7897379,
+    "services": [
+      "Emergency",
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Baystate Medical Center, Springfield, MA, USA",
+    "lat": 42.121522,
+    "lng": -72.6030062,
+    "services": [
+      "General",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Lahey Hospital & Medical Center, Burlington, MA, USA",
+    "lat": 42.4846438,
+    "lng": -71.2042249,
+    "services": [
+      "Neurology",
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "South Shore Hospital, Weymouth, MA, USA",
+    "lat": 42.1755398,
+    "lng": -70.9539154,
+    "services": [
+      "Oncology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Cape Cod Hospital, Hyannis, MA, USA",
+    "lat": 41.6536529,
+    "lng": -70.2732899,
+    "services": [
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Lawrence General Hospital, Lawrence, MA, USA",
+    "lat": 42.7097143,
+    "lng": -71.150077,
+    "services": [
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Newton-Wellesley Hospital, Newton, MA, USA",
+    "lat": 42.3306966,
+    "lng": -71.2480746,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Cooley Dickinson Hospital, Northampton, MA, USA",
+    "lat": 42.3303212,
+    "lng": -72.653308,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Holyoke Medical Center, Holyoke, MA, USA",
+    "lat": 42.2010543,
+    "lng": -72.6281696,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Tufts Medical Center, Boston, MA, USA",
+    "lat": 42.3496554,
+    "lng": -71.0638505,
+    "services": [
+      "Cardiology",
+      "General"
+    ]
+  },
+  {
+    "name": "St. Elizabeth's Medical Center, Brighton, MA, USA",
+    "lat": 42.3486499,
+    "lng": -71.1479958,
+    "services": [
+      "Cardiology",
+      "General"
+    ]
+  },
+  {
+    "name": "Milford Regional Medical Center, Milford, MA, USA",
+    "lat": 42.1343767,
+    "lng": -71.5281512,
+    "services": [
+      "Surgery",
+      "Cardiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Good Samaritan Medical Center, Brockton, MA, USA",
+    "lat": 42.098054,
+    "lng": -71.0609587,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Brockton Hospital, Brockton, MA, USA",
+    "lat": 42.086805,
+    "lng": -70.99112,
+    "services": [
+      "Oncology",
+      "Neurology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Morton Hospital, Taunton, MA, USA",
+    "lat": 41.9062805,
+    "lng": -71.0951812,
+    "services": [
+      "General",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Carney Hospital, Dorchester, MA, USA",
+    "lat": 42.2776696,
+    "lng": -71.0654097,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "St. Anne's Hospital, Fall River, MA, USA",
+    "lat": 41.6924092,
+    "lng": -71.1634511,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Tobey Hospital, Wareham, MA, USA",
+    "lat": 41.7556508,
+    "lng": -70.7144536,
+    "services": [
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Addison Gilbert Hospital, Gloucester, MA, USA",
+    "lat": 42.6246771,
+    "lng": -70.68193,
+    "services": [
+      "Maternity",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Anna Jaques Hospital, Newburyport, MA, USA",
+    "lat": 42.8136933,
+    "lng": -70.8909165,
+    "services": [
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Holy Family Hospital, Methuen, MA, USA",
+    "lat": 42.726742,
+    "lng": -71.167027,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Beth Israel Lahey Health, Burlington, MA, USA",
+    "lat": 42.50482,
+    "lng": -71.19561,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Beth Israel Deaconess Hospital-Milton, Milton, MA, USA",
+    "lat": 42.2513683,
+    "lng": -71.0768394,
+    "services": [
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "Beth Israel Deaconess Hospital-Needham, Needham, MA, USA",
+    "lat": 42.2772808,
+    "lng": -71.2366536,
+    "services": [
+      "Pediatrics",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Sturdy Memorial Hospital, Attleboro, MA, USA",
+    "lat": 41.9420354,
+    "lng": -71.2748362,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Heywood Hospital, Gardner, MA, USA",
+    "lat": 42.5871984,
+    "lng": -71.9873804,
+    "services": [
+      "Mental Health",
+      "Oncology",
+      "General"
+    ]
+  },
+  {
+    "name": "HealthAlliance-Clinton Hospital, Leominster, MA, USA",
+    "lat": 42.52509,
+    "lng": -71.75979,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Harrington Hospital, Southbridge, MA, USA",
+    "lat": 42.0782595,
+    "lng": -72.0424145,
+    "services": [
+      "General",
+      "Cardiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "UMass Memorial HealthAlliance-Clinton Hospital, Clinton, MA, USA",
+    "lat": 42.41676,
+    "lng": -71.68285,
+    "services": [
+      "Surgery",
+      "General"
+    ]
+  },
+  {
+    "name": "UMass Memorial HealthAlliance-Clinton Hospital, Fitchburg, MA, USA",
+    "lat": 42.58342,
+    "lng": -71.8023,
+    "services": [
+      "Maternity",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Nashoba Valley Medical Center, Ayer, MA, USA",
+    "lat": 42.5765174,
+    "lng": -71.5738539,
+    "services": [
+      "Mental Health",
+      "Neurology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Lowell General Hospital, Lowell, MA, USA",
+    "lat": 42.6478028,
+    "lng": -71.3422337,
+    "services": [
+      "Cardiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Emerson Hospital, Concord, MA, USA",
+    "lat": 42.4518863,
+    "lng": -71.3749843,
+    "services": [
+      "Radiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Winchester Hospital, Winchester, MA, USA",
+    "lat": 42.465802,
+    "lng": -71.122703,
+    "services": [
+      "Mental Health",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "MelroseWakefield Hospital, Melrose, MA, USA",
+    "lat": 42.4600412,
+    "lng": -71.0611264,
+    "services": [
+      "Surgery",
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Cambridge Health Alliance, Cambridge, MA, USA",
+    "lat": 42.3751,
+    "lng": -71.10561,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Mount Auburn Hospital, Cambridge, MA, USA",
+    "lat": 42.3741033,
+    "lng": -71.1341758,
+    "services": [
+      "Surgery",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Whidden Memorial Hospital, Everett, MA, USA",
+    "lat": 42.409306,
+    "lng": -71.0394793,
+    "services": [
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "St. Vincent Hospital, Worcester, MA, USA",
+    "lat": 42.2649683,
+    "lng": -71.796554,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Falmouth Hospital, Falmouth, MA, USA",
+    "lat": 41.5639445,
+    "lng": -70.6220293,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Nantucket Cottage Hospital, Nantucket, MA, USA",
+    "lat": 41.2751098,
+    "lng": -70.1010795,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Martha's Vineyard Hospital, Oak Bluffs, MA, USA",
+    "lat": 41.4606311,
+    "lng": -70.5798908,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Newport Hospital, Newport, RI, USA",
+    "lat": 41.4968721,
+    "lng": -71.3059958,
+    "services": [
+      "Emergency",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "The Miriam Hospital, Providence, RI, USA",
+    "lat": 41.82399,
+    "lng": -71.41283,
+    "services": [
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Kent Hospital, Warwick, RI, USA",
+    "lat": 41.7059855,
+    "lng": -71.4772441,
+    "services": [
+      "Radiology",
+      "Maternity",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Westerly Hospital, Westerly, RI, USA",
+    "lat": 41.3621153,
+    "lng": -71.8248372,
+    "services": [
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Landmark Medical Center, Woonsocket, RI, USA",
+    "lat": 42.003766,
+    "lng": -71.4954862,
+    "services": [
+      "General",
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Women & Infants Hospital of Rhode Island, Providence, RI, USA",
+    "lat": 41.8109022,
+    "lng": -71.4133702,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Roger Williams Medical Center, Providence, RI, USA",
+    "lat": 41.8345958,
+    "lng": -71.4351035,
+    "services": [
+      "Emergency",
+      "General"
+    ]
+  },
+  {
+    "name": "Our Lady of Fatima Hospital, North Providence, RI, USA",
+    "lat": 41.8553944,
+    "lng": -71.4604949,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "South County Hospital, Wakefield, RI, USA",
+    "lat": 41.4313286,
+    "lng": -71.4966542,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Memorial Hospital of Rhode Island, Pawtucket, RI, USA",
+    "lat": 41.870295,
+    "lng": -71.3762369,
+    "services": [
+      "General",
+      "Radiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Westerly Hospital, Westerly, RI, USA",
+    "lat": 41.3621153,
+    "lng": -71.8248372,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Southern New Hampshire Medical Center, Nashua, NH, USA",
+    "lat": 42.7563511,
+    "lng": -71.4614697,
+    "services": [
+      "Surgery",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Elliot Hospital, Manchester, NH, USA",
+    "lat": 42.9835476,
+    "lng": -71.4380586,
+    "services": [
+      "Oncology",
+      "General"
+    ]
+  },
+  {
+    "name": "Catholic Medical Center, Manchester, NH, USA",
+    "lat": 42.9909336,
+    "lng": -71.4738779,
+    "services": [
+      "Cardiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Concord Hospital, Concord, NH, USA",
+    "lat": 43.2001803,
+    "lng": -71.5633591,
+    "services": [
+      "Oncology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Wentworth-Douglass Hospital, Dover, NH, USA",
+    "lat": 43.2129963,
+    "lng": -70.874037,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Exeter Hospital, Exeter, NH, USA",
+    "lat": 42.9829217,
+    "lng": -70.9356237,
+    "services": [
+      "Surgery",
+      "Neurology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Portsmouth Regional Hospital, Portsmouth, NH, USA",
+    "lat": 43.0646234,
+    "lng": -70.7894029,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Frisbie Memorial Hospital, Rochester, NH, USA",
+    "lat": 43.2968324,
+    "lng": -70.9599128,
+    "services": [
+      "Surgery",
+      "Maternity",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Lakes Region General Hospital, Laconia, NH, USA",
+    "lat": 43.5283977,
+    "lng": -71.4627812,
+    "services": [
+      "Pediatrics",
+      "Surgery",
+      "General"
+    ]
+  },
+  {
+    "name": "Speare Memorial Hospital, Plymouth, NH, USA",
+    "lat": 43.757896,
+    "lng": -71.6952905,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Androscoggin Valley Hospital, Berlin, NH, USA",
+    "lat": 44.4871012,
+    "lng": -71.1548895,
+    "services": [
+      "Cardiology",
+      "Oncology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Alice Peck Day Memorial Hospital, Lebanon, NH, USA",
+    "lat": 43.6415571,
+    "lng": -72.2647188,
+    "services": [
+      "Oncology",
+      "Neurology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Monadnock Community Hospital, Peterborough, NH, USA",
+    "lat": 42.8933583,
+    "lng": -71.9398159,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Cottage Hospital, Woodsville, NH, USA",
+    "lat": 44.1355054,
+    "lng": -72.0232452,
+    "services": [
+      "Pediatrics",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Cheshire Medical Center, Keene, NH, USA",
+    "lat": 42.9486,
+    "lng": -72.2921523,
+    "services": [
+      "Maternity",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Littleton Regional Healthcare, Littleton, NH, USA",
+    "lat": 44.3177264,
+    "lng": -71.8257098,
+    "services": [
+      "Surgery",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Northern Maine Medical Center, Fort Kent, ME, USA",
+    "lat": 47.2659575,
+    "lng": -68.5927982,
+    "services": [
+      "Maternity",
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Eastern Maine Medical Center, Bangor, ME, USA",
+    "lat": 44.8084356,
+    "lng": -68.7511855,
+    "services": [
+      "Surgery",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Mid Coast Hospital, Brunswick, ME, USA",
+    "lat": 43.9065656,
+    "lng": -69.8930148,
+    "services": [
+      "Emergency",
+      "Neurology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Parkview Adventist Medical Center, Brunswick, ME, USA",
+    "lat": 43.8943893,
+    "lng": -69.9683769,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Pen Bay Medical Center, Rockport, ME, USA",
+    "lat": 44.1442885,
+    "lng": -69.0848389,
+    "services": [
+      "Pediatrics",
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Inland Hospital, Waterville, ME, USA",
+    "lat": 44.5413464,
+    "lng": -69.6625012,
+    "services": [
+      "Maternity",
+      "Pediatrics",
+      "General"
+    ]
+  },
+  {
+    "name": "Mercy Hospital, Portland, ME, USA",
+    "lat": 43.6475193,
+    "lng": -70.2811904,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Southern Maine Health Care, Biddeford, ME, USA",
+    "lat": 43.4767317,
+    "lng": -70.4902096,
+    "services": [
+      "General",
+      "Pediatrics",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "York Hospital, York, ME, USA",
+    "lat": 43.1420755,
+    "lng": -70.6517954,
+    "services": [
+      "Maternity",
+      "Radiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "St. Mary's Regional Medical Center, Lewiston, ME, USA",
+    "lat": 44.101597,
+    "lng": -70.1999213,
+    "services": [
+      "Emergency",
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "Central Maine Medical Center, Lewiston, ME, USA",
+    "lat": 44.1026,
+    "lng": -70.2146926,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Franklin Memorial Hospital, Farmington, ME, USA",
+    "lat": 44.6263797,
+    "lng": -70.1627817,
+    "services": [
+      "Pediatrics",
+      "Radiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Stephens Memorial Hospital, Norway, ME, USA",
+    "lat": 44.2099575,
+    "lng": -70.5316176,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Rumford Hospital, Rumford, ME, USA",
+    "lat": 44.5518292,
+    "lng": -70.5561964,
+    "services": [
+      "Mental Health",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Saco Bay Medical Center, Saco, ME, USA",
+    "lat": 43.50092,
+    "lng": -70.44283,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Northern Light AR Gould Hospital, Presque Isle, ME, USA",
+    "lat": 46.68115,
+    "lng": -68.01586,
+    "services": [
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Northern Light Eastern Maine Medical Center, Bangor, ME, USA",
+    "lat": 44.80118,
+    "lng": -68.77781,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Mount Desert Island Hospital, Bar Harbor, ME, USA",
+    "lat": 44.385223,
+    "lng": -68.2019672,
+    "services": [
+      "Cardiology",
+      "Pediatrics",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Miles Memorial Hospital, Damariscotta, ME, USA",
+    "lat": 44.03286,
+    "lng": -69.51866,
+    "services": [
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Waldo County General Hospital, Belfast, ME, USA",
+    "lat": 44.4110781,
+    "lng": -68.9938071,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Saratoga Hospital, Saratoga Springs, NY, USA",
+    "lat": 43.0865948,
+    "lng": -73.7989873,
+    "services": [
+      "Emergency",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Glens Falls Hospital, Glens Falls, NY, USA",
+    "lat": 43.3063845,
+    "lng": -73.6460107,
+    "services": [
+      "Oncology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Ellis Hospital, Schenectady, NY, USA",
+    "lat": 42.8202132,
+    "lng": -73.9164609,
+    "services": [
+      "Mental Health",
+      "Maternity",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "St. Peter's Hospital, Albany, NY, USA",
+    "lat": 42.6550629,
+    "lng": -73.8039756,
+    "services": [
+      "Mental Health",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Albany Medical Center, Albany, NY, USA",
+    "lat": 42.6532131,
+    "lng": -73.7766789,
+    "services": [
+      "Surgery",
+      "Cardiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Samaritan Hospital, Troy, NY, USA",
+    "lat": 42.7335638,
+    "lng": -73.6725118,
+    "services": [
+      "Radiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "St. Mary's Hospital, Troy, NY, USA",
+    "lat": 42.742594,
+    "lng": -73.6762377,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Columbia Memorial Health, Hudson, NY, USA",
+    "lat": 42.2463453,
+    "lng": -73.7774042,
+    "services": [
+      "Neurology",
+      "Surgery",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Northern Dutchess Hospital, Rhinebeck, NY, USA",
+    "lat": 41.9355254,
+    "lng": -73.9129177,
+    "services": [
+      "Radiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Vassar Brothers Medical Center, Poughkeepsie, NY, USA",
+    "lat": 41.6936055,
+    "lng": -73.9348169,
+    "services": [
+      "Pediatrics",
+      "General"
+    ]
+  },
+  {
+    "name": "MidHudson Regional Hospital of Westchester Medical Center, Poughkeepsie, NY, USA",
+    "lat": 41.7185544,
+    "lng": -73.9285495,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "St. Luke's Cornwall Hospital, Newburgh, NY, USA",
+    "lat": 41.5034081,
+    "lng": -74.0143883,
+    "services": [
+      "Surgery",
+      "Pediatrics",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "HealthAlliance Hospital, Kingston, NY, USA",
+    "lat": 41.9211521,
+    "lng": -73.999681,
+    "services": [
+      "Neurology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Benedictine Hospital, Kingston, NY, USA",
+    "lat": 41.9211521,
+    "lng": -73.999681,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Catskill Regional Medical Center, Harris, NY, USA",
+    "lat": 41.71426,
+    "lng": -74.72627,
+    "services": [
+      "Neurology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Garnet Health Medical Center, Middletown, NY, USA",
+    "lat": 41.4423094,
+    "lng": -74.3683176,
+    "services": [
+      "Pediatrics",
+      "Neurology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Orange Regional Medical Center, Middletown, NY, USA",
+    "lat": 41.44593,
+    "lng": -74.42293,
+    "services": [
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Good Samaritan Hospital, Suffern, NY, USA",
+    "lat": 41.1108492,
+    "lng": -74.1344493,
+    "services": [
+      "General",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Nyack Hospital, Nyack, NY, USA",
+    "lat": 41.095892,
+    "lng": -73.9263346,
+    "services": [
+      "General",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Phelps Hospital, Sleepy Hollow, NY, USA",
+    "lat": 41.1095281,
+    "lng": -73.8640034,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "White Plains Hospital, White Plains, NY, USA",
+    "lat": 41.025814,
+    "lng": -73.769319,
+    "services": [
+      "Maternity",
+      "Oncology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "St. John's Riverside Hospital, Yonkers, NY, USA",
+    "lat": 40.9689291,
+    "lng": -73.8865891,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "NewYork-Presbyterian Lawrence Hospital, Bronxville, NY, USA",
+    "lat": 40.9420843,
+    "lng": -73.8368414,
+    "services": [
+      "Cardiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Montefiore Medical Center, Bronx, NY, USA",
+    "lat": 40.8800853,
+    "lng": -73.8798439,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "BronxCare Health System, Bronx, NY, USA",
+    "lat": 40.82732,
+    "lng": -73.92357,
+    "services": [
+      "Cardiology",
+      "Oncology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "NewYork-Presbyterian/Columbia University Irving Medical Center, New York, NY, USA",
+    "lat": 40.730715,
+    "lng": -73.995562,
+    "services": [
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Mount Sinai West, New York, NY, USA",
+    "lat": 40.7697129,
+    "lng": -73.9869074,
+    "services": [
+      "General",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Mount Sinai St. Luke's, New York, NY, USA",
+    "lat": 40.729653,
+    "lng": -74.002202,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Lenox Hill Hospital, New York, NY, USA",
+    "lat": 40.7736428,
+    "lng": -73.9608619,
+    "services": [
+      "Cardiology",
+      "Radiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Weill Cornell Medical Center, New York, NY, USA",
+    "lat": 40.7647021,
+    "lng": -73.9540033,
+    "services": [
+      "Cardiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "NYU Langone Medical Center, New York, NY, USA",
+    "lat": 40.7423026,
+    "lng": -73.9735654,
+    "services": [
+      "Mental Health",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Bellevue Hospital Center, New York, NY, USA",
+    "lat": 40.7389504,
+    "lng": -73.975196,
+    "services": [
+      "Surgery",
+      "Oncology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "The Brooklyn Hospital Center, Brooklyn, NY, USA",
+    "lat": 40.6905277,
+    "lng": -73.9842727,
+    "services": [
+      "Pediatrics",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Maimonides Medical Center, Brooklyn, NY, USA",
+    "lat": 40.6394203,
+    "lng": -73.9981068,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "NewYork-Presbyterian Brooklyn Methodist Hospital, Brooklyn, NY, USA",
+    "lat": 40.6678376,
+    "lng": -73.9791449,
+    "services": [
+      "Surgery",
+      "Neurology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Kings County Hospital Center, Brooklyn, NY, USA",
+    "lat": 40.6564684,
+    "lng": -73.9436745,
+    "services": [
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Wyckoff Heights Medical Center, Brooklyn, NY, USA",
+    "lat": 40.7041442,
+    "lng": -73.9177076,
+    "services": [
+      "General",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "New York Methodist Hospital, Brooklyn, NY, USA",
+    "lat": 40.6678376,
+    "lng": -73.9791449,
+    "services": [
+      "Radiology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Jamaica Hospital Medical Center, Jamaica, NY, USA",
+    "lat": 40.7003665,
+    "lng": -73.8164967,
+    "services": [
+      "Emergency",
+      "General",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Long Island Jewish Medical Center, New Hyde Park, NY, USA",
+    "lat": 40.7351,
+    "lng": -73.68791,
+    "services": [
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "North Shore University Hospital, Manhasset, NY, USA",
+    "lat": 40.7752137,
+    "lng": -73.7010277,
+    "services": [
+      "Surgery",
+      "Oncology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Francis Hospital, Roslyn, NY, USA",
+    "lat": 40.8045548,
+    "lng": -73.6701838,
+    "services": [
+      "Maternity",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Nassau University Medical Center, East Meadow, NY, USA",
+    "lat": 40.7272895,
+    "lng": -73.5537991,
+    "services": [
+      "Neurology",
+      "General"
+    ]
+  },
+  {
+    "name": "South Nassau Communities Hospital, Oceanside, NY, USA",
+    "lat": 40.6532604,
+    "lng": -73.6247524,
+    "services": [
+      "Oncology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Mercy Medical Center, Rockville Centre, NY, USA",
+    "lat": 40.687191,
+    "lng": -73.630873,
+    "services": [
+      "Surgery",
+      "Radiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Stony Brook University Hospital, Stony Brook, NY, USA",
+    "lat": 40.9082693,
+    "lng": -73.1151875,
+    "services": [
+      "Neurology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Good Samaritan Hospital Medical Center, West Islip, NY, USA",
+    "lat": 40.6940058,
+    "lng": -73.2943415,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Southside Hospital, Bay Shore, NY, USA",
+    "lat": 40.7260332,
+    "lng": -73.2417981,
+    "services": [
+      "Emergency",
+      "General"
+    ]
+  },
+  {
+    "name": "Huntington Hospital, Huntington, NY, USA",
+    "lat": 40.879446,
+    "lng": -73.4160808,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Brookhaven Memorial Hospital Medical Center, Patchogue, NY, USA",
+    "lat": 40.76565,
+    "lng": -73.01511,
+    "services": [
+      "Maternity",
+      "Pediatrics",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Peconic Bay Medical Center, Riverhead, NY, USA",
+    "lat": 40.9342731,
+    "lng": -72.6747506,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Eastern Long Island Hospital, Greenport, NY, USA",
+    "lat": 41.1107619,
+    "lng": -72.3611203,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "John T. Mather Memorial Hospital, Port Jefferson, NY, USA",
+    "lat": 40.9396773,
+    "lng": -73.0533068,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Charles Hospital, Port Jefferson, NY, USA",
+    "lat": 40.9461302,
+    "lng": -73.0609682,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Newark Beth Israel Medical Center, Newark, NJ, USA",
+    "lat": 40.7102728,
+    "lng": -74.2125846,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "St. Barnabas Medical Center, Livingston, NJ, USA",
+    "lat": 40.7634604,
+    "lng": -74.3048418,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "University Hospital, Newark, NJ, USA",
+    "lat": 40.7405364,
+    "lng": -74.1911759,
+    "services": [
+      "Radiology",
+      "Pediatrics",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Hackensack University Medical Center, Hackensack, NJ, USA",
+    "lat": 40.8837051,
+    "lng": -74.0559409,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Valley Hospital, Ridgewood, NJ, USA",
+    "lat": 40.983657,
+    "lng": -74.1005024,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Englewood Hospital and Medical Center, Englewood, NJ, USA",
+    "lat": 40.89288,
+    "lng": -73.97264,
+    "services": [
+      "Pediatrics",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Holy Name Medical Center, Teaneck, NJ, USA",
+    "lat": 40.8828876,
+    "lng": -74.0101951,
+    "services": [
+      "Mental Health",
+      "Neurology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Jersey City Medical Center, Jersey City, NJ, USA",
+    "lat": 40.7152568,
+    "lng": -74.0508239,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Trinitas Regional Medical Center, Elizabeth, NJ, USA",
+    "lat": 40.6587509,
+    "lng": -74.2142244,
+    "services": [
+      "Oncology",
+      "Emergency",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Overlook Medical Center, Summit, NJ, USA",
+    "lat": 40.7125532,
+    "lng": -74.3535005,
+    "services": [
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Atlantic Health System, Morristown, NJ, USA",
+    "lat": 40.7847843,
+    "lng": -74.4681382,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Robert Wood Johnson University Hospital, New Brunswick, NJ, USA",
+    "lat": 40.4953068,
+    "lng": -74.4496115,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Saint Peter's University Hospital, New Brunswick, NJ, USA",
+    "lat": 40.5006491,
+    "lng": -74.4598666,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Princeton Medical Center, Plainsboro, NJ, USA",
+    "lat": 40.339764,
+    "lng": -74.6238206,
+    "services": [
+      "Oncology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Capital Health Medical Center - Hopewell, Pennington, NJ, USA",
+    "lat": 40.2922921,
+    "lng": -74.8053844,
+    "services": [
+      "General",
+      "Radiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Trenton, NJ, USA",
+    "lat": 40.2203074,
+    "lng": -74.7659,
+    "services": [
+      "General",
+      "Pediatrics",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Francis Medical Center, Trenton, NJ, USA",
+    "lat": 40.2162388,
+    "lng": -74.7413028,
+    "services": [
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Lourdes Medical Center of Burlington County, Willingboro, NJ, USA",
+    "lat": 40.0461623,
+    "lng": -74.8799556,
+    "services": [
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Virtua Our Lady of Lourdes Hospital, Camden, NJ, USA",
+    "lat": 39.92595,
+    "lng": -75.11962,
+    "services": [
+      "Surgery",
+      "Neurology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Jefferson Health - Cherry Hill, Cherry Hill, NJ, USA",
+    "lat": 39.9263677,
+    "lng": -75.0176627,
+    "services": [
+      "Cardiology",
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Cooper University Hospital, Camden, NJ, USA",
+    "lat": 39.9412249,
+    "lng": -75.1163865,
+    "services": [
+      "General",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Inspira Medical Center Vineland, Vineland, NJ, USA",
+    "lat": 39.4444106,
+    "lng": -75.0585828,
+    "services": [
+      "Mental Health",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Atlanticare Regional Medical Center, Atlantic City, NJ, USA",
+    "lat": 39.3583729,
+    "lng": -74.4343519,
+    "services": [
+      "Mental Health",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Shore Medical Center, Somers Point, NJ, USA",
+    "lat": 39.3154562,
+    "lng": -74.590901,
+    "services": [
+      "General",
+      "Cardiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Beebe Healthcare, Lewes, DE, USA",
+    "lat": 38.7521809,
+    "lng": -75.1676125,
+    "services": [
+      "Emergency",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Bayhealth Kent Campus, Dover, DE, USA",
+    "lat": 39.15817,
+    "lng": -75.52437,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "ChristianaCare, Newark, DE, USA",
+    "lat": 39.6879885,
+    "lng": -75.6754019,
+    "services": [
+      "Mental Health",
+      "Maternity",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Union Hospital, Elkton, MD, USA",
+    "lat": 39.6092617,
+    "lng": -75.8320507,
+    "services": [
+      "Cardiology",
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Johns Hopkins Bayview Medical Center, Baltimore, MD, USA",
+    "lat": 39.2912129,
+    "lng": -76.5490696,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "University of Maryland Medical Center, Baltimore, MD, USA",
+    "lat": 39.2882737,
+    "lng": -76.6243944,
+    "services": [
+      "Emergency",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "MedStar Union Memorial Hospital, Baltimore, MD, USA",
+    "lat": 39.3295258,
+    "lng": -76.6148396,
+    "services": [
+      "Radiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Greater Baltimore Medical Center, Towson, MD, USA",
+    "lat": 39.3917767,
+    "lng": -76.62564,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Sinai Hospital of Baltimore, Baltimore, MD, USA",
+    "lat": 39.3528965,
+    "lng": -76.6622872,
+    "services": [
+      "Oncology",
+      "Radiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Franklin Square Medical Center, Baltimore, MD, USA",
+    "lat": 39.3519063,
+    "lng": -76.4792235,
+    "services": [
+      "General",
+      "Radiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Anne Arundel Medical Center, Annapolis, MD, USA",
+    "lat": 38.9904275,
+    "lng": -76.5337953,
+    "services": [
+      "Radiology",
+      "General"
+    ]
+  },
+  {
+    "name": "University of Maryland St. Joseph Medical Center, Towson, MD, USA",
+    "lat": 39.3871112,
+    "lng": -76.6110888,
+    "services": [
+      "Neurology",
+      "General"
+    ]
+  },
+  {
+    "name": "Holy Cross Hospital, Silver Spring, MD, USA",
+    "lat": 39.0149062,
+    "lng": -77.0351498,
+    "services": [
+      "Surgery",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Adventist HealthCare Shady Grove Medical Center, Rockville, MD, USA",
+    "lat": 39.0984534,
+    "lng": -77.198546,
+    "services": [
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "Suburban Hospital, Bethesda, MD, USA",
+    "lat": 38.9978061,
+    "lng": -77.1105393,
+    "services": [
+      "Pediatrics",
+      "Maternity",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "MedStar Washington Hospital Center, Washington, D.C., USA",
+    "lat": 38.9290283,
+    "lng": -77.0148946,
+    "services": [
+      "Maternity",
+      "Cardiology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "George Washington University Hospital, Washington, D.C., USA",
+    "lat": 38.9013767,
+    "lng": -77.0506159,
+    "services": [
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Sibley Memorial Hospital, Washington, D.C., USA",
+    "lat": 38.9367698,
+    "lng": -77.1088795,
+    "services": [
+      "Surgery",
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Howard University Hospital, Washington, D.C., USA",
+    "lat": 38.9178339,
+    "lng": -77.0201005,
+    "services": [
+      "Mental Health",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Children's National Hospital, Washington, D.C., USA",
+    "lat": 38.927021,
+    "lng": -77.0139788,
+    "services": [
+      "Oncology",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Inova Alexandria Hospital, Alexandria, VA, USA",
+    "lat": 38.8223813,
+    "lng": -77.104734,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Sentara Martha Jefferson Hospital, Charlottesville, VA, USA",
+    "lat": 38.022927,
+    "lng": -78.4443351,
+    "services": [
+      "Maternity",
+      "Radiology",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Sentara Norfolk General Hospital, Norfolk, VA, USA",
+    "lat": 36.8624603,
+    "lng": -76.3038338,
+    "services": [
+      "Cardiology",
+      "General",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Bon Secours St. Mary's Hospital, Richmond, VA, USA",
+    "lat": 37.55376,
+    "lng": -77.46026,
+    "services": [
+      "Cardiology",
+      "Neurology",
+      "General"
+    ]
+  },
+  {
+    "name": "VCU Medical Center, Richmond, VA, USA",
+    "lat": 37.5402575,
+    "lng": -77.4300631,
+    "services": [
+      "Maternity",
+      "Oncology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Mary Washington Hospital, Fredericksburg, VA, USA",
+    "lat": 38.3103872,
+    "lng": -77.4838307,
+    "services": [
+      "Emergency",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Sentara Northern Virginia Medical Center, Woodbridge, VA, USA",
+    "lat": 38.6370975,
+    "lng": -77.286208,
+    "services": [
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Inova Fair Oaks Hospital, Fairfax, VA, USA",
+    "lat": 38.8847566,
+    "lng": -77.3808692,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Reston Hospital Center, Reston, VA, USA",
+    "lat": 38.9627081,
+    "lng": -77.3647912,
+    "services": [
+      "Surgery",
+      "Cardiology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Loudoun Hospital, Leesburg, VA, USA",
+    "lat": 39.0744725,
+    "lng": -77.4776711,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Winchester Medical Center, Winchester, VA, USA",
+    "lat": 39.1962714,
+    "lng": -78.1894347,
+    "services": [
+      "Emergency"
+    ]
+  },
+  {
+    "name": "LewisGale Medical Center, Salem, VA, USA",
+    "lat": 37.2639562,
+    "lng": -80.0302549,
+    "services": [
+      "Cardiology",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Carilion Roanoke Memorial Hospital, Roanoke, VA, USA",
+    "lat": 37.2513354,
+    "lng": -79.9415762,
+    "services": [
+      "General",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Centra Lynchburg General Hospital, Lynchburg, VA, USA",
+    "lat": 37.4170888,
+    "lng": -79.1714512,
+    "services": [
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Novant Health Forsyth Medical Center, Winston-Salem, NC, USA",
+    "lat": 36.0757267,
+    "lng": -80.2969079,
+    "services": [
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Cone Health, Greensboro, NC, USA",
+    "lat": 36.1390534,
+    "lng": -79.866084,
+    "services": [
+      "Mental Health",
+      "Emergency",
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "UNC Rex Hospital, Raleigh, NC, USA",
+    "lat": 35.8181917,
+    "lng": -78.7031375,
+    "services": [
+      "Cardiology",
+      "General"
+    ]
+  },
+  {
+    "name": "Duke Raleigh Hospital, Raleigh, NC, USA",
+    "lat": 35.8285956,
+    "lng": -78.6179474,
+    "services": [
+      "Neurology",
+      "Mental Health",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Vidant Medical Center, Greenville, NC, USA",
+    "lat": 35.6080369,
+    "lng": -77.4014251,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Atrium Health, Charlotte, NC, USA",
+    "lat": 35.0920376,
+    "lng": -80.8715969,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Novant Health Presbyterian Medical Center, Charlotte, NC, USA",
+    "lat": 35.2125299,
+    "lng": -80.8243097,
+    "services": [
+      "General",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Carolinas Medical Center, Charlotte, NC, USA",
+    "lat": 35.2038003,
+    "lng": -80.8386847,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "WakeMed Health & Hospitals, Raleigh, NC, USA",
+    "lat": 35.8262232,
+    "lng": -78.6064196,
+    "services": [
+      "Emergency",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Duke University Medical Center, Durham, NC, USA",
+    "lat": 36.0018891,
+    "lng": -78.9118056,
+    "services": [
+      "Mental Health",
+      "Radiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "University of North Carolina Hospitals, Chapel Hill, NC, USA",
+    "lat": 35.9132,
+    "lng": -79.05584,
+    "services": [
+      "Surgery",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Mission Hospital, Asheville, NC, USA",
+    "lat": 35.5766889,
+    "lng": -82.5492249,
+    "services": [
+      "Cardiology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Pardee Hospital, Hendersonville, NC, USA",
+    "lat": 35.3204913,
+    "lng": -82.46778,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "New Hanover Regional Medical Center, Wilmington, NC, USA",
+    "lat": 34.2050891,
+    "lng": -77.9210562,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Tidelands Waccamaw Community Hospital, Murrells Inlet, SC, USA",
+    "lat": 33.5605963,
+    "lng": -79.0433811,
+    "services": [
+      "Pediatrics",
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Conway Medical Center, Conway, SC, USA",
+    "lat": 33.7849779,
+    "lng": -79.0006434,
+    "services": [
+      "Oncology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "McLeod Regional Medical Center, Florence, SC, USA",
+    "lat": 34.1969765,
+    "lng": -79.7581256,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Grand Strand Medical Center, Myrtle Beach, SC, USA",
+    "lat": 33.7580795,
+    "lng": -78.8194704,
+    "services": [
+      "General",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Lexington Medical Center, West Columbia, SC, USA",
+    "lat": 34.0070307,
+    "lng": -81.1138309,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Palmetto Health Richland, Columbia, SC, USA",
+    "lat": 34.027949,
+    "lng": -81.0325566,
+    "services": [
+      "Neurology",
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Prisma Health Baptist Hospital, Columbia, SC, USA",
+    "lat": 34.0074381,
+    "lng": -81.0335315,
+    "services": [
+      "Surgery",
+      "Neurology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Spartanburg Regional Medical Center, Spartanburg, SC, USA",
+    "lat": 34.9669664,
+    "lng": -81.9387309,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Bon Secours St. Francis Health System, Greenville, SC, USA",
+    "lat": 34.85262,
+    "lng": -82.39401,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "AnMed Health Medical Center, Anderson, SC, USA",
+    "lat": 34.5117661,
+    "lng": -82.6464125,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Piedmont Medical Center, Rock Hill, SC, USA",
+    "lat": 34.9570247,
+    "lng": -81.0514829,
+    "services": [
+      "Maternity",
+      "Surgery",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Coastal Carolina Hospital, Hardeeville, SC, USA",
+    "lat": 32.3150693,
+    "lng": -81.0539059,
+    "services": [
+      "Radiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Beaufort Memorial Hospital, Beaufort, SC, USA",
+    "lat": 32.4168031,
+    "lng": -80.6873151,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "East Georgia Regional Hospital, Statesboro, GA, USA",
+    "lat": 32.44879,
+    "lng": -81.78317,
+    "services": [
+      "General",
+      "Surgery",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Joseph's/Candler Health System, Savannah, GA, USA",
+    "lat": 32.08354,
+    "lng": -81.09983,
+    "services": [
+      "Cardiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Memorial Health University Medical Center, Savannah, GA, USA",
+    "lat": 32.0300585,
+    "lng": -81.0888859,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Southeast Georgia Health System, Brunswick, GA, USA",
+    "lat": 31.1757602,
+    "lng": -81.4848253,
+    "services": [
+      "Neurology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Phoebe Putney Memorial Hospital, Albany, GA, USA",
+    "lat": 31.5904254,
+    "lng": -84.1575887,
+    "services": [
+      "Pediatrics",
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Columbus Regional Health, Columbus, GA, USA",
+    "lat": 32.46098,
+    "lng": -84.98771,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Piedmont Columbus Regional Midtown, Columbus, GA, USA",
+    "lat": 32.46098,
+    "lng": -84.98771,
+    "services": [
+      "Oncology",
+      "General"
+    ]
+  },
+  {
+    "name": "Emory University Hospital Midtown, Atlanta, GA, USA",
+    "lat": 33.749,
+    "lng": -84.38798,
+    "services": [
+      "Mental Health",
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Grady Memorial Hospital, Atlanta, GA, USA",
+    "lat": 33.7517323,
+    "lng": -84.3820052,
+    "services": [
+      "Mental Health",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Northside Hospital Atlanta, Atlanta, GA, USA",
+    "lat": 33.9102901,
+    "lng": -84.3545068,
+    "services": [
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Gwinnett Medical Center, Lawrenceville, GA, USA",
+    "lat": 33.9630741,
+    "lng": -84.0176751,
+    "services": [
+      "Surgery",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "WellStar Cobb Hospital, Austell, GA, USA",
+    "lat": 33.8576031,
+    "lng": -84.604519,
+    "services": [
+      "Emergency",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Northeast Georgia Medical Center, Gainesville, GA, USA",
+    "lat": 34.3044194,
+    "lng": -83.8162307,
+    "services": [
+      "General",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Northside Hospital Forsyth, Cumming, GA, USA",
+    "lat": 34.1779101,
+    "lng": -84.141073,
+    "services": [
+      "Emergency",
+      "Neurology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Piedmont Hospital, Atlanta, GA, USA",
+    "lat": 33.8093759,
+    "lng": -84.3954273,
+    "services": [
+      "Radiology",
+      "Oncology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Emory Johns Creek Hospital, Johns Creek, GA, USA",
+    "lat": 34.0668824,
+    "lng": -84.1761616,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Houston Healthcare, Warner Robins, GA, USA",
+    "lat": 32.62098,
+    "lng": -83.5999,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Navicent Health, Macon, GA, USA",
+    "lat": 32.8338837,
+    "lng": -83.6358767,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Central Georgia Medical Center, Macon, GA, USA",
+    "lat": 32.8338837,
+    "lng": -83.6358767,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "University of Alabama at Birmingham Hospital, Birmingham, AL, USA",
+    "lat": 33.52066,
+    "lng": -86.80249,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Ascension St. Vincent's East, Birmingham, AL, USA",
+    "lat": 33.54427,
+    "lng": -86.78193,
+    "services": [
+      "Emergency",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Grandview Medical Center, Birmingham, AL, USA",
+    "lat": 33.4337378,
+    "lng": -86.7191423,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "UAB Highlands, Birmingham, AL, USA",
+    "lat": 33.4944712,
+    "lng": -86.8065932,
+    "services": [
+      "Maternity",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Cullman Regional Medical Center, Cullman, AL, USA",
+    "lat": 34.2012534,
+    "lng": -86.8048139,
+    "services": [
+      "Mental Health",
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Decatur Morgan Hospital, Decatur, AL, USA",
+    "lat": 34.5908582,
+    "lng": -86.9713935,
+    "services": [
+      "Emergency",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Huntsville Hospital, Huntsville, AL, USA",
+    "lat": 34.7204666,
+    "lng": -86.5809629,
+    "services": [
+      "Maternity",
+      "Emergency",
+      "General"
+    ]
+  },
+  {
+    "name": "Crestwood Medical Center, Huntsville, AL, USA",
+    "lat": 34.694121,
+    "lng": -86.5727494,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Jackson Hospital & Clinic, Montgomery, AL, USA",
+    "lat": 32.36681,
+    "lng": -86.29997,
+    "services": [
+      "Oncology",
+      "Surgery",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Baptist Medical Center South, Montgomery, AL, USA",
+    "lat": 32.3279531,
+    "lng": -86.277782,
+    "services": [
+      "Mental Health",
+      "Pediatrics",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Providence Hospital, Mobile, AL, USA",
+    "lat": 30.6790631,
+    "lng": -88.1988972,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "USA Health University Hospital, Mobile, AL, USA",
+    "lat": 30.7070954,
+    "lng": -88.0982829,
+    "services": [
+      "Cardiology",
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Infirmary Health, Mobile, AL, USA",
+    "lat": 30.69436,
+    "lng": -88.04305,
+    "services": [
+      "Cardiology",
+      "Radiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "DCH Regional Medical Center, Tuscaloosa, AL, USA",
+    "lat": 33.204164,
+    "lng": -87.5275368,
+    "services": [
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Thomas Hospital, Fairhope, AL, USA",
+    "lat": 30.5190361,
+    "lng": -87.8883517,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Foley, AL, USA",
+    "lat": 30.4065868,
+    "lng": -87.6835974,
+    "services": [
+      "Oncology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Springhill Medical Center, Mobile, AL, USA",
+    "lat": 30.6847189,
+    "lng": -88.1301569,
+    "services": [
+      "Surgery"
+    ]
+  },
+  {
+    "name": "University of South Alabama Children's & Women's Hospital, Mobile, AL, USA",
+    "lat": 30.69436,
+    "lng": -88.04305,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "West Florida Hospital, Pensacola, FL, USA",
+    "lat": 30.5147517,
+    "lng": -87.219055,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Sacred Heart Hospital Pensacola, Pensacola, FL, USA",
+    "lat": 30.4776766,
+    "lng": -87.211478,
+    "services": [
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Ascension St. Vincent's Riverside, Jacksonville, FL, USA",
+    "lat": 30.33218,
+    "lng": -81.65565,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Mayo Clinic in Florida, Jacksonville, FL, USA",
+    "lat": 30.33218,
+    "lng": -81.65565,
+    "services": [
+      "Surgery",
+      "General"
+    ]
+  },
+  {
+    "name": "Memorial Hospital Jacksonville, Jacksonville, FL, USA",
+    "lat": 30.2881412,
+    "lng": -81.6011302,
+    "services": [
+      "Pediatrics",
+      "General"
+    ]
+  },
+  {
+    "name": "UF Health Jacksonville, Jacksonville, FL, USA",
+    "lat": 30.3484582,
+    "lng": -81.6649149,
+    "services": [
+      "Oncology",
+      "Neurology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Baptist Health, Jacksonville, FL, USA",
+    "lat": 30.3126806,
+    "lng": -81.6588389,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Shands at UF, Gainesville, FL, USA",
+    "lat": 29.65163,
+    "lng": -82.32483,
+    "services": [
+      "Radiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "UF Health Shands Children's Hospital, Gainesville, FL, USA",
+    "lat": 29.65163,
+    "lng": -82.32483,
+    "services": [
+      "General",
+      "Cardiology",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "AdventHealth Orlando, Orlando, FL, USA",
+    "lat": 28.5746319,
+    "lng": -81.3693722,
+    "services": [
+      "Oncology",
+      "Pediatrics",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Arnold Palmer Hospital for Children, Orlando, FL, USA",
+    "lat": 28.5233249,
+    "lng": -81.3798633,
+    "services": [
+      "Pediatrics",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Florida Hospital, Orlando, FL, USA",
+    "lat": 28.574324,
+    "lng": -81.3711956,
+    "services": [
+      "Pediatrics",
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "UF Health Central Florida, The Villages, FL, USA",
+    "lat": 28.93408,
+    "lng": -81.95994,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Winter Park Memorial Hospital, Winter Park, FL, USA",
+    "lat": 28.5977458,
+    "lng": -81.3267623,
+    "services": [
+      "General",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "AdventHealth Kissimmee, Kissimmee, FL, USA",
+    "lat": 28.30468,
+    "lng": -81.41667,
+    "services": [
+      "Radiology",
+      "Surgery",
+      "General"
+    ]
+  },
+  {
+    "name": "Florida Hospital Ocala, Ocala, FL, USA",
+    "lat": 29.1749816,
+    "lng": -82.136077,
+    "services": [
+      "Emergency",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "AdventHealth Tampa, Tampa, FL, USA",
+    "lat": 28.0714907,
+    "lng": -82.4218972,
+    "services": [
+      "Cardiology",
+      "Emergency",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "St. Joseph's Hospital, Tampa, FL, USA",
+    "lat": 27.9827502,
+    "lng": -82.4914637,
+    "services": [
+      "Surgery",
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "Tampa General Hospital, Tampa, FL, USA",
+    "lat": 27.9375006,
+    "lng": -82.4589003,
+    "services": [
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Morton Plant Hospital, Clearwater, FL, USA",
+    "lat": 27.952054,
+    "lng": -82.801584,
+    "services": [
+      "Cardiology",
+      "Radiology",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "BayCare Health System, Tampa, FL, USA",
+    "lat": 27.94752,
+    "lng": -82.45843,
+    "services": [
+      "Maternity",
+      "Oncology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Largo Medical Center, Largo, FL, USA",
+    "lat": 27.90979,
+    "lng": -82.78842,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Mease Countryside Hospital, Safety Harbor, FL, USA",
+    "lat": 28.0414957,
+    "lng": -82.7056002,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Johns Hopkins All Children's Hospital, St. Petersburg, FL, USA",
+    "lat": 27.7629443,
+    "lng": -82.6397514,
+    "services": [
+      "Cardiology",
+      "Oncology",
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Manatee Memorial Hospital, Bradenton, FL, USA",
+    "lat": 27.4975706,
+    "lng": -82.5621222,
+    "services": [
+      "Emergency",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Sarasota Memorial Hospital, Sarasota, FL, USA",
+    "lat": 27.3186485,
+    "lng": -82.5317847,
+    "services": [
+      "Cardiology"
+    ]
+  },
+  {
+    "name": "Venice Regional Bayfront Health, Venice, FL, USA",
+    "lat": 27.0906043,
+    "lng": -82.4452985,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Gulf Coast Medical Center, Fort Myers, FL, USA",
+    "lat": 26.5437687,
+    "lng": -81.8500236,
+    "services": [
+      "Surgery",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Lee Memorial Hospital, Fort Myers, FL, USA",
+    "lat": 26.6274479,
+    "lng": -81.8739578,
+    "services": [
+      "Emergency",
+      "Radiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Naples Community Hospital, Naples, FL, USA",
+    "lat": 26.1503028,
+    "lng": -81.7991894,
+    "services": [
+      "Neurology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Physicians Regional Medical Center, Naples, FL, USA",
+    "lat": 26.1054044,
+    "lng": -81.6848121,
+    "services": [
+      "Surgery",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Cleveland Clinic Indian River Hospital, Vero Beach, FL, USA",
+    "lat": 27.6590747,
+    "lng": -80.3944453,
+    "services": [
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Lucie Medical Center, Port St. Lucie, FL, USA",
+    "lat": 27.2888054,
+    "lng": -80.2942031,
+    "services": [
+      "Pediatrics",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Jupiter Medical Center, Jupiter, FL, USA",
+    "lat": 26.9226726,
+    "lng": -80.0965673,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Palm Beach Gardens Medical Center, Palm Beach Gardens, FL, USA",
+    "lat": 26.8291151,
+    "lng": -80.086117,
+    "services": [
+      "Emergency",
+      "Radiology",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "JFK Medical Center, Atlantis, FL, USA",
+    "lat": 26.5978574,
+    "lng": -80.0919319,
+    "services": [
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Wellington Regional Medical Center, Wellington, FL, USA",
+    "lat": 26.6532905,
+    "lng": -80.2050093,
+    "services": [
+      "Oncology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Delray Medical Center, Delray Beach, FL, USA",
+    "lat": 26.4363684,
+    "lng": -80.1270227,
+    "services": [
+      "Surgery",
+      "Cardiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Boca Raton Regional Hospital, Boca Raton, FL, USA",
+    "lat": 26.3587364,
+    "lng": -80.1018989,
+    "services": [
+      "Oncology",
+      "Mental Health",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Broward Health Medical Center, Fort Lauderdale, FL, USA",
+    "lat": 26.1027303,
+    "lng": -80.1411666,
+    "services": [
+      "Pediatrics",
+      "Oncology",
+      "General"
+    ]
+  },
+  {
+    "name": "Memorial Regional Hospital, Hollywood, FL, USA",
+    "lat": 26.0195839,
+    "lng": -80.1799368,
+    "services": [
+      "General"
+    ]
+  },
+  {
+    "name": "Holy Cross Hospital, Fort Lauderdale, FL, USA",
+    "lat": 26.1871575,
+    "lng": -80.1196103,
+    "services": [
+      "Cardiology",
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "Cleveland Clinic Florida, Weston, FL, USA",
+    "lat": 26.0832758,
+    "lng": -80.3663059,
+    "services": [
+      "Pediatrics",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Jackson Memorial Hospital, Miami, FL, USA",
+    "lat": 25.7916705,
+    "lng": -80.2126015,
+    "services": [
+      "Cardiology",
+      "Maternity",
+      "General"
+    ]
+  },
+  {
+    "name": "Mount Sinai Medical Center, Miami Beach, FL, USA",
+    "lat": 25.8133808,
+    "lng": -80.1408734,
+    "services": [
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Baptist Health South Florida, Coral Gables, FL, USA",
+    "lat": 25.72149,
+    "lng": -80.26838,
+    "services": [
+      "General",
+      "Mental Health",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Kendall Regional Medical Center, Miami, FL, USA",
+    "lat": 25.7310036,
+    "lng": -80.3862433,
+    "services": [
+      "Mental Health"
+    ]
+  },
+  {
+    "name": "South Miami Hospital, South Miami, FL, USA",
+    "lat": 25.7019587,
+    "lng": -80.2945772,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Doctors Hospital, Coral Gables, FL, USA",
+    "lat": 25.7244099,
+    "lng": -80.2740663,
+    "services": [
+      "Pediatrics"
+    ]
+  },
+  {
+    "name": "Memorial Hospital West, Pembroke Pines, FL, USA",
+    "lat": 26.012667,
+    "lng": -80.3100145,
+    "services": [
+      "Radiology",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "West Boca Medical Center, Boca Raton, FL, USA",
+    "lat": 26.35869,
+    "lng": -80.0831,
+    "services": [
+      "Surgery",
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "Ochsner Medical Center, New Orleans, LA, USA",
+    "lat": 29.9610677,
+    "lng": -90.1456737,
+    "services": [
+      "General",
+      "Radiology",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "Tulane Medical Center, New Orleans, LA, USA",
+    "lat": 29.9558617,
+    "lng": -90.0762932,
+    "services": [
+      "General",
+      "Mental Health",
+      "Emergency"
+    ]
+  },
+  {
+    "name": "University Medical Center New Orleans, New Orleans, LA, USA",
+    "lat": 29.9597986,
+    "lng": -90.0821311,
+    "services": [
+      "Pediatrics",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Touro Infirmary, New Orleans, LA, USA",
+    "lat": 29.9258607,
+    "lng": -90.092066,
+    "services": [
+      "General",
+      "Surgery"
+    ]
+  },
+  {
+    "name": "Our Lady of the Lake Regional Medical Center, Baton Rouge, LA, USA",
+    "lat": 30.4032919,
+    "lng": -91.1066967,
+    "services": [
+      "Mental Health",
+      "Maternity"
+    ]
+  },
+  {
+    "name": "Baton Rouge General Medical Center, Baton Rouge, LA, USA",
+    "lat": 30.4496467,
+    "lng": -91.1529563,
+    "services": [
+      "Emergency",
+      "Neurology"
+    ]
+  },
+  {
+    "name": "LSU Health Shreveport, Shreveport, LA, USA",
+    "lat": 32.4805963,
+    "lng": -93.7608949,
+    "services": [
+      "Maternity",
+      "Mental Health",
+      "General"
+    ]
+  },
+  {
+    "name": "Willis-Knighton Medical Center, Shreveport, LA, USA",
+    "lat": 32.4849188,
+    "lng": -93.7787067,
+    "services": [
+      "Radiology",
+      "Pediatrics",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Lafayette General Medical Center, Lafayette, LA, USA",
+    "lat": 30.202702,
+    "lng": -92.0196017,
+    "services": [
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Ochsner LSU Health Shreveport, Shreveport, LA, USA",
+    "lat": 32.4943387,
+    "lng": -93.7499093,
+    "services": [
+      "Maternity",
+      "Radiology"
+    ]
+  },
+  {
+    "name": "St. Francis Medical Center, Monroe, LA, USA",
+    "lat": 32.499365,
+    "lng": -92.1141465,
+    "services": [
+      "Radiology",
+      "Oncology"
+    ]
+  },
+  {
+    "name": "Lake Charles Memorial Health System, Lake Charles, LA, USA",
+    "lat": 30.21309,
+    "lng": -93.2044,
+    "services": [
+      "Radiology",
+      "General",
+      "Mental Health"
+    ]
+  }
+]
