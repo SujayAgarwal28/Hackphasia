@@ -26,13 +26,6 @@ const HomePage: React.FC = () => {
             </svg>
             Start AI Assessment
           </Link>
-          <Link to="/visual-health" className="btn-secondary btn-lg">
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            Visual Health Scan
-          </Link>
         </div>
       </section>
 
@@ -52,15 +45,15 @@ const HomePage: React.FC = () => {
         />
         
         <FeatureCard
-          title="Computer Vision Analysis"
-          description="Real-time medical image analysis for skin conditions, wound assessment, and malnutrition indicators using advanced machine learning."
+          title="Maps & Clinics"
+          description="Find nearby clinics and healthcare facilities using real-time location services and interactive maps for immediate medical assistance"
           icon={
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
           }
-          link="/visual-health"
+          link="/map"
           badge="Computer Vision"
           badgeColor="success"
         />
@@ -102,19 +95,6 @@ const HomePage: React.FC = () => {
           link="/mental-health"
           badge="Wellness"
           badgeColor="primary"
-        />
-        
-        <FeatureCard
-          title="Voice Assessment"
-          description="Traditional voice-enabled symptom reporting with speech-to-text capabilities and multilingual voice recognition support."
-          icon={
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-            </svg>
-          }
-          link="/triage"
-          badge="Voice-Enabled"
-          badgeColor="success"
         />
       </section>
 

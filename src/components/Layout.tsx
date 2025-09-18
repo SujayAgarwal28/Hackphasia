@@ -61,7 +61,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container-custom py-3">
           <div className="grid grid-cols-3 gap-2">
             <MobileNavItem href="/ai-triage" label="AI Assessment" />
-            <MobileNavItem href="/visual-health" label="Visual Scan" />
             <MobileNavItem href="/multilingual" label="Translate" />
             <MobileNavItem href="/body-mapping" label="Body Map" />
             <MobileNavItem href="/mental-health" label="Mental Health" />
