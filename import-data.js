@@ -10,9 +10,8 @@ async function main() {
   try {
     // Load service account
     const serviceAccountPath = path.join(__dirname, "firebase_secrets.json");
-    const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
-
-    // Load clinics data
+    console.log("Loading service account from:", serviceAccountPath);
+    const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));    // Load clinics data
     const clinicsPath = path.join(__dirname, "clinics_with_coords.json");
     console.log("📂 Reading clinics data from:", clinicsPath);
     const clinicsData = JSON.parse(fs.readFileSync(clinicsPath, "utf8"));
@@ -23,10 +22,8 @@ async function main() {
 
     // Init Firebase
     admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
-    });
-
-    const db = admin.firestore();
+      credential: admin.credential.cert(serviceAccount)
+    });    const db = admin.firestore();
     console.log("🔥 Connected to Firestore");
 
     // Process in batches of 500 (Firestore batch limit)
