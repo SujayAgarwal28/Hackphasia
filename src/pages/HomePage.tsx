@@ -70,7 +70,7 @@ const HomePage: React.FC = () => {
           badge="Multilingual"
           badgeColor="warning"
         />
-        {/*}
+        {/*
         <FeatureCard
           title="Interactive Body Mapping"
           description="Precise pain and symptom localization with AI-powered analysis to communicate health concerns effectively with healthcare providers."
@@ -96,70 +96,6 @@ const HomePage: React.FC = () => {
           badge="Wellness"
           badgeColor="primary"
         />
-      </section>
-
-      {/* Technology Showcase */}
-      <section className="space-y-8">
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900">
-            Advanced Technology Stack
-          </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Built with cutting-edge AI and machine learning technologies to provide 
-            reliable, accurate, and culturally sensitive healthcare support.
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-8">
-          <TechCard
-            title="Artificial Intelligence"
-            items={[
-              "GPT-4 powered conversational AI",
-              "TensorFlow.js computer vision",
-              "Cultural adaptation algorithms",
-              "Natural language processing"
-            ]}
-            icon={
-              <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            }
-          />
-          
-          <TechCard
-            title="Medical Expertise"
-            items={[
-              "Refugee-specific health patterns",
-              "Trauma-informed care protocols",
-              "Cultural sensitivity frameworks",
-              "Emergency intervention systems"
-            ]}
-            icon={
-              <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            }
-          />
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="card gradient-primary text-white text-center space-y-6 p-12">
-        <h2 className="text-3xl font-bold">
-          Get Started with AI-Powered Health Support
-        </h2>
-        <p className="text-xl opacity-90 max-w-2xl mx-auto">
-          Access comprehensive health assessment tools designed specifically 
-          for refugee communities with cultural sensitivity and multilingual support.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/ai-triage" className="btn-secondary btn-lg bg-white text-blue-600 hover:bg-neutral-100">
-            Begin AI Assessment
-          </Link>
-          <Link to="/multilingual" className="btn-secondary btn-lg border-white text-white hover:bg-white/10">
-            Access Translation
-          </Link>
-        </div>
       </section>
     </div>
   );
@@ -199,7 +135,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           <h3 className="text-xl font-semibold text-neutral-900 group-hover:text-blue-700 transition-colors">
             {title}
           </h3>
-          <p className="text-neutral-600 leading-relaxed">
+          <p className="text-neutral-700 leading-relaxed">
             {description}
           </p>
         </div>
@@ -215,32 +151,5 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     </Link>
   );
 };
-
-interface TechCardProps {
-  title: string;
-  items: string[];
-  icon: React.ReactNode;
-}
-
-const TechCard: React.FC<TechCardProps> = ({ title, items, icon }) => (
-  <div className="card">
-    <div className="card-body space-y-4">
-      <div className="flex items-center space-x-3">
-        {icon}
-        <h3 className="text-xl font-semibold text-neutral-900">{title}</h3>
-      </div>
-      <ul className="space-y-2">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-center space-x-2">
-            <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            <span className="text-neutral-600">{item}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-);
 
 export default HomePage;

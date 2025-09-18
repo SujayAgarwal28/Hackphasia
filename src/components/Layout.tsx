@@ -47,12 +47,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </header>
 
       {/* Mobile Navigation */}
-      <div className="lg:hidden bg-white border-b border-neutral-200">
+      <div className="lg:hidden bg-white border-b border-neutral-200 w-full">
         <div className="container-custom py-3">
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             <MobileNavItem href="/ai-triage" label="AI Assessment" />
             <MobileNavItem href="/multilingual" label="Translate" />
-            {/*<MobileNavItem href="/body-mapping" label="Body Map" />*/}
             <MobileNavItem href="/mental-health" label="Mental Health" />
             <MobileNavItem href="/" label="Dashboard" />
           </div>
@@ -104,6 +103,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <p>24/7 AI-powered health assistance</p>
                 <p>Multilingual crisis intervention</p>
                 <p>Cultural sensitivity protocols</p>
+                <div className="mt-4">
+                  <button className="btn-danger btn-sm w-full">
+                    Access Emergency Services
+                  </button>
+                </div>
               </div>
             </div>
           </div>
