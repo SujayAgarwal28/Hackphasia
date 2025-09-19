@@ -82,20 +82,34 @@ class EnhancedMLRefugeeHealthService {
 
   async initialize(): Promise<void> {
     try {
+      console.log('🤖 Starting Enhanced ML initialization...');
+      
+      // Wait for TensorFlow.js to be ready
+      console.log('⏳ Waiting for TensorFlow.js...');
       await tf.ready();
-      console.log('🤖 Initializing Enhanced ML Models...');
+      console.log('✅ TensorFlow.js ready');
+      
+      console.log('🧠 Creating neural network models...');
       
       // Create ensemble of specialized models
       this.models.primary = await this.createAdvancedNeuralNetwork();
+      console.log('✅ Primary model created');
+      
       this.models.ensemble = await this.createEnsembleModels();
+      console.log('✅ Ensemble models created');
+      
       this.models.validator = await this.createValidationModel();
+      console.log('✅ Validation model created');
       
       // Train with real medical patterns
+      console.log('📚 Training with medical datasets...');
       await this.trainWithMedicalDatasets();
+      console.log('✅ Training completed');
       
-      console.log(`✅ Enhanced ML System Ready - Accuracy: ${this.trainingMetrics.accuracy * 100}%`);
+      console.log(`🎉 Enhanced ML System Ready - Accuracy: ${this.trainingMetrics.accuracy * 100}%`);
     } catch (error) {
       console.error('❌ Enhanced ML initialization failed:', error);
+      throw error; // Re-throw to let the UI handle it
     }
   }
 
