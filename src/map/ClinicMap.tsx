@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { Icon, LatLngBounds } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Clinic, UnsafeZone } from '../types';
+import { Clinic } from '../types';
 import { UserLocation, GeolocationService } from './GeolocationService';
 import { DataProvider } from '../data/DataProviders';
 
@@ -40,7 +40,6 @@ const clinicIcon = new Icon({
 });
 
 interface ClinicMapProps {
-  showSafeRoute?: boolean;
   selectedClinic?: string | null;
   onClinicSelect?: (clinic: Clinic) => void;
   className?: string;
@@ -76,13 +75,11 @@ const MapBoundsController: React.FC<{
 };
 
 export const ClinicMap: React.FC<ClinicMapProps> = ({
-  showSafeRoute = false,
   selectedClinic = null,
   onClinicSelect,
   className = ''
 }) => {
   const [clinics, setClinics] = useState<Clinic[]>([]);
-  const [unsafeZones, setUnsafeZones] = useState<UnsafeZone[]>([]);
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -94,12 +91,8 @@ export const ClinicMap: React.FC<ClinicMapProps> = ({
     const loadData = async () => {
       try {
         setLoading(true);
-        const [clinicsData, unsafeZonesData] = await Promise.all([
-          DataProvider.getClinics(),
-          DataProvider.getUnsafeZones()
-        ]);
+        const clinicsData = await DataProvider.getClinics();
         setClinics(clinicsData);
-        setUnsafeZones(unsafeZonesData);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load map data');
       } finally {
@@ -153,15 +146,6 @@ export const ClinicMap: React.FC<ClinicMapProps> = ({
     if (services.includes('Mental Health')) return 'bg-blue-500';
     if (services.includes('General')) return 'bg-green-500';
     return 'bg-gray-500';
-  };
-
-  const getUnsafeZoneColor = (severity: string): string => {
-    switch (severity) {
-      case 'high': return '#ef4444';
-      case 'medium': return '#f59e0b';
-      case 'low': return '#eab308';
-      default: return '#6b7280';
-    }
   };
 
   const defaultCenter: [number, number] = [39.9334, 32.8597]; // Ankara, Turkey
@@ -314,33 +298,6 @@ export const ClinicMap: React.FC<ClinicMapProps> = ({
             </Popup>
           </Marker>
         ))}
-
-        {/* Unsafe zone overlays (when safe route is enabled) */}
-        {showSafeRoute && unsafeZones.map((zone) => (
-          <Circle
-            key={zone.id}
-            center={[zone.lat, zone.lng]}
-            radius={zone.radius}
-            pathOptions={{
-              color: getUnsafeZoneColor(zone.severity),
-              fillColor: getUnsafeZoneColor(zone.severity),
-              fillOpacity: 0.2,
-              weight: 2,
-            }}
-          >
-            <Popup>
-              <div className="p-2">
-                <h3 className="font-semibold text-red-600">⚠️ Unsafe Zone</h3>
-                <p className="text-sm text-gray-600 capitalize">
-                  Severity: {zone.severity}
-                </p>
-                {zone.description && (
-                  <p className="text-sm text-gray-600 mt-1">{zone.description}</p>
-                )}
-              </div>
-            </Popup>
-          </Circle>
-        ))}
       </MapContainer>
 
       {/* Map legend */}
@@ -355,12 +312,6 @@ export const ClinicMap: React.FC<ClinicMapProps> = ({
             <div className="w-4 h-4 bg-red-500 mr-2"></div>
             <span className="text-gray-600 dark:text-gray-300">Health Clinic</span>
           </div>
-          {showSafeRoute && (
-            <div className="flex items-center">
-              <div className="w-4 h-4 rounded-full bg-red-500 opacity-20 border-2 border-red-500 mr-2"></div>
-              <span className="text-gray-600 dark:text-gray-300">Unsafe Zone</span>
-            </div>
-          )}
         </div>
       </div>
     </div>

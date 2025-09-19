@@ -1,6 +1,6 @@
 import { FirestoreService } from './FirebaseService';
 import { MockDataService } from './MockDataService';
-import { Clinic, UnsafeZone, FirstAidGuide, Story } from '../types';
+import { Clinic, FirstAidGuide, Story } from '../types';
 
 export class DataProvider {
   private static useFirestore = FirestoreService.isAvailable();
@@ -39,30 +39,6 @@ export class DataProvider {
       }
     }
     return await MockDataService.addClinic(clinic);
-  }
-
-  static async getUnsafeZones(): Promise<UnsafeZone[]> {
-    if (this.useFirestore) {
-      try {
-        return await FirestoreService.getUnsafeZones();
-      } catch (error) {
-        console.warn('Firestore failed, falling back to mock data:', error);
-        this.useFirestore = false;
-      }
-    }
-    return await MockDataService.getUnsafeZones();
-  }
-
-  static async addUnsafeZone(zone: Omit<UnsafeZone, 'id'>): Promise<string> {
-    if (this.useFirestore) {
-      try {
-        return await FirestoreService.addUnsafeZone(zone);
-      } catch (error) {
-        console.warn('Firestore failed, falling back to mock data:', error);
-        this.useFirestore = false;
-      }
-    }
-    return await MockDataService.addUnsafeZone(zone);
   }
 
   static async getFirstAidGuides(language = 'en'): Promise<FirstAidGuide[]> {
