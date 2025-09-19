@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ClinicMap from '../map/ClinicMap';
+// import SafeRouteToggle from '../map/SafeRoute';
 import { GeolocationService, UserLocation } from '../map/GeolocationService';
 import { Clinic } from '../types';
 import { DataProvider } from '../data/DataProviders';
 
 const MapPage: React.FC = () => {
+  // const [safeRouteEnabled, setSafeRouteEnabled] = useState(false);
   const [selectedClinic, setSelectedClinic] = useState<Clinic | null>(null);
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
   const [nearbyClinics, setNearbyClinics] = useState<Clinic[]>([]);
@@ -99,6 +101,14 @@ const MapPage: React.FC = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1 space-y-6">
+          {/* Safe Route Toggle */}
+          {/* 
+          <SafeRouteToggle
+            userLocation={userLocation}
+            onSafeRouteToggle={setSafeRouteEnabled}
+          />
+          */}
+
           {/* Selected Clinic Details */}
           {selectedClinic && (
             <div className="bg-white rounded-lg shadow-md p-4 border border-neutral-200">

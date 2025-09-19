@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
@@ -10,6 +9,7 @@ import MapPage from './pages/MapPage'
 import FirstAidPage from './pages/FirstAidPage'
 import MentalHealthPage from './pages/MentalHealthPage'
 import AboutPage from './pages/AboutPage'
+import { HospitalManagementPage } from './pages/HospitalManagementPage'
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/map" element={<MapPage />} />
           <Route path="/first-aid" element={<FirstAidPage />} />
           <Route path="/mental-health" element={<MentalHealthPage />} />
+          <Route path="/hospital-management" element={<HospitalManagementPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Layout>
