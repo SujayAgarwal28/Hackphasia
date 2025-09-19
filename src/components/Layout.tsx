@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import Navigation from './Navigation';
 import { appMetadata } from '../config';
 
@@ -7,6 +7,70 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const [showEmergencyModal, setShowEmergencyModal] = useState(false);
+
+  const emergencyContacts = [
+    {
+      country: "Global",
+      services: [
+        { name: "WHO Emergency Hotline", number: "+41 22 791 21 11", description: "World Health Organization" },
+        { name: "UNHCR Emergency", number: "+41 22 739 8111", description: "UN Refugee Agency" }
+      ]
+    },
+    {
+      country: "United States",
+      services: [
+        { name: "Emergency Services", number: "911", description: "Police, Fire, Medical" },
+        { name: "Crisis Text Line", number: "Text HOME to 741741", description: "24/7 Crisis Support" },
+        { name: "National Suicide Prevention", number: "988", description: "Suicide & Crisis Lifeline" }
+      ]
+    },
+    {
+      country: "United Kingdom", 
+      services: [
+        { name: "Emergency Services", number: "999", description: "Police, Fire, Medical" },
+        { name: "NHS 111", number: "111", description: "Non-emergency medical advice" },
+        { name: "Samaritans", number: "116 123", description: "Free 24/7 emotional support" }
+      ]
+    },
+    {
+      country: "India",
+      services: [
+        { name: "Emergency Services", number: "112", description: "Police, Fire, Medical" },
+        { name: "Medical Emergency", number: "108", description: "Ambulance Services" },
+        { name: "Mental Health Helpline", number: "9152987821", description: "iCALL Psychosocial Helpline" }
+      ]
+    },
+    {
+      country: "Canada",
+      services: [
+        { name: "Emergency Services", number: "911", description: "Police, Fire, Medical" },
+        { name: "Crisis Services", number: "1-833-456-4566", description: "Canada Suicide Prevention" },
+        { name: "Kids Help Phone", number: "1-800-668-6868", description: "24/7 support for youth" }
+      ]
+    }
+  ];
+
+  const governmentHealthLinks = [
+    { name: "WHO - World Health Organization", url: "https://www.who.int/emergencies", region: "Global" },
+    { name: "CDC - Centers for Disease Control", url: "https://www.cdc.gov/", region: "United States" },
+    { name: "NHS - National Health Service", url: "https://www.nhs.uk/", region: "United Kingdom" },
+    { name: "Health Canada", url: "https://www.canada.ca/en/health-canada.html", region: "Canada" },
+    { name: "Ministry of Health & Family Welfare", url: "https://www.mohfw.gov.in/", region: "India" }
+  ];
+
+  const handleEmergencyClick = () => {
+    setShowEmergencyModal(true);
+  };
+
+  const handleCallNumber = (number: string) => {
+    window.open(`tel:${number}`, '_self');
+  };
+
+  const handleVisitWebsite = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="min-h-screen bg-neutral-50">
       {/* Professional Header */}
@@ -88,23 +152,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             
             <div>
-              <h4 className="font-medium text-neutral-900 mb-3">Quick Access</h4>
-              <div className="space-y-2 text-sm">
-                <a href="/ai-triage" className="link block">AI Health Assessment</a>
-                <a href="/visual-health" className="link block">Visual Health Analysis</a>
-                <a href="/multilingual" className="link block">Translation Services</a>
-                <a href="/mental-health" className="link block">Mental Health Support</a>
-              </div>
+              
             </div>
             
             <div>
               <h4 className="font-medium text-neutral-900 mb-3">Emergency Support</h4>
               <div className="space-y-2 text-sm text-neutral-600">
-                <p>24/7 AI-powered health assistance</p>
                 <p>Multilingual crisis intervention</p>
                 <p>Cultural sensitivity protocols</p>
                 <div className="mt-4">
-                  <button className="btn-danger btn-sm w-full">
+                  <button 
+                    onClick={handleEmergencyClick}
+                    className="btn-danger btn-sm w-full"
+                  >
                     Access Emergency Services
                   </button>
                 </div>
@@ -120,6 +180,94 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
       </footer>
+
+      {/* Emergency Services Modal */}
+      {showEmergencyModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold text-red-600">🚨 Emergency Services</h2>
+                <button
+                  onClick={() => setShowEmergencyModal(false)}
+                  className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                >
+                  ×
+                </button>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Emergency Contacts */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4 text-red-600">📞 Emergency Helplines</h3>
+                  <div className="space-y-4">
+                    {emergencyContacts.map((country, idx) => (
+                      <div key={idx} className="border rounded-lg p-4">
+                        <h4 className="font-medium text-gray-900 mb-3">{country.country}</h4>
+                        <div className="space-y-2">
+                          {country.services.map((service, serviceIdx) => (
+                            <div key={serviceIdx} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
+                              <div>
+                                <div className="font-medium text-sm">{service.name}</div>
+                                <div className="text-xs text-gray-600">{service.description}</div>
+                              </div>
+                              <button
+                                onClick={() => handleCallNumber(service.number)}
+                                className="bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700 transition-colors"
+                              >
+                                {service.number}
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Government Health Links */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4 text-blue-600">🏛️ Government Health Services</h3>
+                  <div className="space-y-3">
+                    {governmentHealthLinks.map((link, idx) => (
+                      <div key={idx} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                        <div className="flex justify-between items-center">
+                          <div>
+                            <h4 className="font-medium text-gray-900">{link.name}</h4>
+                            <div className="text-sm text-gray-600">{link.region}</div>
+                          </div>
+                          <button
+                            onClick={() => handleVisitWebsite(link.url)}
+                            className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition-colors"
+                          >
+                            Visit Site
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                <p className="text-sm text-yellow-800">
+                  <strong>⚠️ Important:</strong> In life-threatening emergencies, call your local emergency number immediately. 
+                  This platform provides supplementary support and should not replace professional emergency services.
+                </p>
+              </div>
+
+              <div className="mt-4 flex justify-end">
+                <button
+                  onClick={() => setShowEmergencyModal(false)}
+                  className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
