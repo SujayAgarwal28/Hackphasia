@@ -74,7 +74,7 @@ const MapPage: React.FC = () => {
           🏥 Find Nearby Clinics
         </h1>
         <p className="text-neutral-700 text-lg">
-          Interactive map with clinic locations and safe route navigation
+          Interactive map with clinic locations
         </p>
         
         {/* Data source indicator */}
